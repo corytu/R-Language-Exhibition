@@ -3,7 +3,7 @@ library(ggplot2)
 
 # Define server logic required to draw a line chart
 shinyServer(function(input, output) {
-  # month_selected <- reactive({which(input$month == month.name)})
+  month_selected <- reactive({which(input$month == month.name)})
   output$airplot <- renderPlot({
     if (input$obs == "Ozone") {
       ggplot(aes(x = Day, y = Ozone),
