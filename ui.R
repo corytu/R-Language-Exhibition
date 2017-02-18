@@ -15,8 +15,9 @@ shinyUI(fluidPage(
         "obs", "Select one variable",
         choices = names(airquality)[1:4]
       ),
-      helpText("Data from R built-in airquality data set")
-      ),
+      helpText("Data from R built-in airquality data set"),
+      submitButton("Confirm")
+    ),
     # Show a plot of the selected condition
     mainPanel(
        plotOutput("airplot")
