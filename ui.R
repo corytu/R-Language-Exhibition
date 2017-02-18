@@ -9,7 +9,7 @@ shinyUI(fluidPage(
     sidebarPanel(
       selectInput(
         "month", "Select the month",
-        choices = 5:9
+        choices = month.name[5:9]
       ),
       selectInput(
         "obs", "Select one variable",
