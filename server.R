@@ -13,7 +13,7 @@ shinyServer(function(input, output) {
       ggplot(aes(x = Day, y = Ozone),
              data = subset(my_air, Month == input$month)) +
         geom_line(size = 1) + geom_smooth() +
-        labs(list(x = "Day of Month", y = "Mean Ozone (parts/billion)"))
+        labs(list(x = "Day of Month", y = "Mean Ozone (ppb)"))
     }
     else if (input$obs == "Solar.R") {
       ggplot(aes(x = Day, y = Solar.R),
