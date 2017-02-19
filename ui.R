@@ -9,7 +9,7 @@ shinyUI(fluidPage(
     sidebarPanel(
       helpText("1. Select one month and one variable which interest you"),
       helpText("2. Click \"Confirm\""),
-      helpText("3. The line graph of the chosen variable versus days of the month will be showed"),
+      helpText("3. The line graph (with a blue trend curve) of the chosen variable versus days of the month will be showed"),
       selectInput(
         "month", "Select the month",
         choices = month.name[5:9]
