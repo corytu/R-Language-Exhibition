@@ -1,3 +1,3 @@
 # datasciencecoursera
 ## This is a markdown file
-Repo for date science courses on Coursera
+Repo for data science courses on Coursera
