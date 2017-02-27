@@ -1,4 +1,4 @@
-# datasciencecoursera
+# Data Science Play Ground
 ## Here are two branches
 ### master (code files)
 * cachematrix.R -- Create and cache a matrix. Find its inverse matrix if it exists.
