@@ -1,4 +1,6 @@
-# R Language Playground
+## R Language Playground
+__*This respository is NOT intended to be licensed. Please be aware that copyright laws apply.*__
+
 ## Here are two branches
 ### master (code files and documents)
 * R_Tutorial.pdf: A tutorial I gave to BLP in Oct 2016.
