@@ -1,4 +1,4 @@
-## R Language Playground
+# R Language Playground
 __*This respository is NOT intended to be licensed. Please be aware that copyright laws apply.*__
 
 ## Here are two branches
