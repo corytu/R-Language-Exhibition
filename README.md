@@ -5,7 +5,7 @@
 * ui.R and server.R: Shiny app based on data from R built-in "airquality".
 * cachematrix.R: Create and cache a matrix. Find its inverse matrix if it exists.
 
-### gh-pages (public web pages)
+### gh-pages (public html pages)
 * Plotting with R ggplot2: Organizing scatter plots, bar plots, and faceting. Slides are done with R markdown tools.
 * Air quality in New York in 1973: Using "airquality" data frame in R and demonstrating a simple shiny application.
 * Taiwan National Parks: Showing all nine national parks in Taiwan (Feb 2017) with leaflet and R.
