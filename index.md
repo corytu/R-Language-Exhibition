@@ -1,4 +1,5 @@
 ## Hello World!
+* My name is Cory and I am from Taiwan. Welcome to my playground for R language.
 * Please read the <a href="https://github.com/corytu/R_Language_Playground/blob/master/README.md">README file</a> in the master branch (I will keep it updated)
 
 ## Tutorial Slides
