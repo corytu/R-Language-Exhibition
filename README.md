@@ -1,9 +1,9 @@
 # R Language Playground
 ## Here are two branches
-### master (code files)
-* cachematrix.R: Create and cache a matrix. Find its inverse matrix if it exists.
+### master (code files and documents)
+* R_Tutorial.pdf: A tutorial I gave to BLP in Oct 2016.
 * ui.R and server.R: Shiny app based on data from R built-in "airquality".
-* R_Tutorial: A tutorial I gave to BLP in Oct 2016.
+* cachematrix.R: Create and cache a matrix. Find its inverse matrix if it exists.
 
 ### gh-pages (public web pages)
 * Plotting with R ggplot2: Organizing scatter plots, bar plots, and faceting. Slides are done with R markdown tools.
