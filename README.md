@@ -9,8 +9,8 @@ __*This respository is NOT intended to be licensed.*__
 * <a href="https://github.com/corytu/R_Language_Playground/blob/master/R_Tutorial_20161012_BLP.pdf">R Programming tutorial</a> (Oct 2016)
 
 ## Project Demonstration
-* <a href="https://corytu.shinyapps.io/airquality/">My first Shiny app</a> (ui.R and server.R are in the master branch of this repository) (Feb 2017)<br>
-It uses "airquality" data frame in R and plots the relationship between selected variables. Details are available <a href="https://corytu.github.io/R_Language_Playground/Air_Quality_in_New_York_in_1973.html">here</a>.
+* <a href="https://corytu.shinyapps.io/airquality/">My first Shiny app</a> (Feb 2017)<br>
+It uses "airquality" data frame in R and plots the relationship between selected variables. Details are available <a href="https://corytu.github.io/R_Language_Playground/Air_Quality_in_New_York_in_1973.html">here</a>. The ui.R and server.R are in the master branch of this repository.
 * <a href="https://corytu.github.io/R_Language_Playground/Taiwan_National_Parks.html">Taiwan National Parks</a> (Feb 2017)<br>
 It shows all nine national parks in Taiwan. The hyperlinks to each national park are provided once users click the markers.
 * <a href="https://corytu.github.io/R_Language_Playground/play_mtcars_dataset.html">Playing mtcars dataset</a> (Feb 2017)<br>
