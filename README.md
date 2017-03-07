@@ -16,3 +16,6 @@ __*This respository is NOT intended to be licensed. Please be aware that copyrig
 * Air quality in New York in 1973: Using "airquality" data frame in R and demonstrating a simple shiny application.
 * Taiwan National Parks: Showing all nine national parks in Taiwan (Feb 2017) with leaflet and R.
 * Play mtcars: A simple plotly demonstration with "mtcars" data frame in R.
+
+## Others
+* I might organize and publish some personal notes of R here, but it is not one of my priorties now.
