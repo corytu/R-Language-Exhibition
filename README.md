@@ -18,4 +18,4 @@ __*This respository is NOT intended to be licensed. Please be aware that copyrig
 * Play mtcars: A simple plotly demonstration with "mtcars" data frame in R.
 
 ## Others
-* I might organize and publish some personal notes of R here, but it is not one of my priorties now.
+* I might organize and publish some personal notes of R here (in Mandarin), but it is not one of my priorities now.
