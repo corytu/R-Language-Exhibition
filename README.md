@@ -5,8 +5,10 @@ __*This respository is NOT intended to be licensed.*__
 * My name is Yu-Zhen, and I am from Taiwan. Welcome to my playground for R language.
 
 ## Tutorial Slides
-* <a href="https://corytu.github.io/R_Language_Playground/Plotting_with_R_ggplot2.html">Plotting with R: ggplot2</a> (Mar 2017)
-* <a href="https://github.com/corytu/R_Language_Playground/blob/master/R_Tutorial_20161012_BLP.pdf">R Programming tutorial</a> (Oct 2016)
+* <a href="https://corytu.github.io/R_Language_Playground/Plotting_with_R_ggplot2.html">Plotting with R: ggplot2</a> (Mar 2017)<br>
+A guidance for creating scatter plots and bar plots, including making legends and facets for conditions. Practices and challenges come along. Slides are done with R markdown tools.
+* <a href="https://github.com/corytu/R_Language_Playground/blob/master/R_Tutorial_20161012_BLP.pdf">R Programming tutorial</a> (Oct 2016)<br>
+An R tutorial which covers the history and overview of R, the characteristics of various R objects, and vectorized operations. It also contains the functions people use to input/output the data or scripts. In the end the control structures and function writing in R are introduced.
 
 ## Project Demonstration
 * <a href="https://corytu.shinyapps.io/airquality/">My first Shiny app</a> (Feb 2017)<br>
