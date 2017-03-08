@@ -6,7 +6,7 @@ __*This respository is NOT intended to be licensed.*__
 
 ## Tutorial Slides
 * <a href="https://corytu.github.io/R_Language_Playground/Plotting_with_R_ggplot2.html">Plotting with R: ggplot2</a> (Mar 2017)<br>
-A guidance for creating scatter plots and bar plots, including making legends and facets for conditions. Practices and challenges come along. Slides are done with R markdown tools.
+After a brief introduction of R plotting systems, a guidance for creating scatter plots and bar plots including legends and facets for conditions is provided. It also covers methods to add error bars and regression lines. Practices come along so that people can apply their newly learned skills. Slides are done with R markdown.
 * <a href="https://github.com/corytu/R_Language_Playground/blob/master/R_Tutorial_20161012_BLP.pdf">R Programming tutorial</a> (Oct 2016)<br>
 An R tutorial which covers the history and overview of R, the characteristics of various R objects, and vectorized operations. It also contains the functions people use to input/output the data or scripts. In the end the control structures and function writing in R are introduced.
 
