@@ -11,8 +11,8 @@ A guidance for creating scatter plots and bar plots, including making legends an
 An R tutorial which covers the history and overview of R, the characteristics of various R objects, and vectorized operations. It also contains the functions people use to input/output the data or scripts. In the end the control structures and function writing in R are introduced.
 
 ## Project Demonstration
-* <a href="https://corytu.shinyapps.io/airquality/">My first Shiny app</a> (Feb 2017)<br>
-It uses "airquality" data frame in R and plots the relationship between selected variables. Details are available <a href="https://corytu.github.io/R_Language_Playground/Air_Quality_in_New_York_in_1973.html">here</a>. The ui.R and server.R are in the master branch of this repository.
+* <a href="https://corytu.shinyapps.io/airquality/">Air quality in New York in 1973</a> (Feb 2017)<br>
+My first Shiny application uses "airquality" data frame in R and plots the relationship between selected variables. Details are available <a href="https://corytu.github.io/R_Language_Playground/Air_Quality_in_New_York_in_1973.html">here</a>. The ui.R and server.R are in the master branch of this repository.
 * <a href="https://corytu.github.io/R_Language_Playground/Taiwan_National_Parks.html">Taiwan National Parks</a> (Feb 2017)<br>
 It shows all nine national parks in Taiwan. The hyperlinks to each national park are provided once users click the markers.
 * <a href="https://corytu.github.io/R_Language_Playground/play_mtcars_dataset.html">Playing mtcars dataset</a> (Feb 2017)<br>
