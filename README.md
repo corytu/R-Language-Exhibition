@@ -18,16 +18,21 @@ It shows all nine national parks in Taiwan. The hyperlinks to each national park
 * <a href="https://corytu.github.io/R_Language_Playground/play_mtcars_dataset.html">Playing mtcars dataset</a> (Feb 2017)<br>
 It is a rather simple presentation with plotly tool. The data are from R built-in "mtcars" dataset.
 
-## Others
+## Personal notes
 *I might organize and publish some personal notes of R here (mostly in Mandarin), but it is not one of my priorities now.*
 ### Data cleaning and manipulation
+* TBA
+
 ### Data visualization
+* TBA
+
 ### Functions for general R programming
+* TBA
+
 ### Useful packages (ordered alphabetically)
 * <a href="https://cran.r-project.org/web/packages/cowplot/vignettes/introduction.html">cowplot</a>: Merging multiple ggplots and labeling them respectively in one graph.
 * <a href="http://ggplot2.org">ggplot2</a>: A popular plotting system in R.
 * <a href="https://cran.r-project.org/package=reshape2">reshape2</a>: `melt` the data into a long-format or `cast` it into a wide-format. An example provided <a href="https://corytu.github.io/R_Language_Playground/reshape2_melt.html">here</a>.
-
 
 # Here are two branches if you view on GitHub:
 ## master (code files and documents)
