@@ -19,7 +19,15 @@ It shows all nine national parks in Taiwan. The hyperlinks to each national park
 It is a rather simple presentation with plotly tool. The data are from R built-in "mtcars" dataset.
 
 ## Others
-* I might organize and publish some personal notes of R here (in Mandarin), but it is not one of my priorities now.
+*I might organize and publish some personal notes of R here (mostly in Mandarin), but it is not one of my priorities now.*
+### Data cleaning and manipulation
+### Data visualization
+### Functions for general R programming
+### Useful packages (alphabetically)
+* <a href="https://cran.r-project.org/web/packages/cowplot/vignettes/introduction.html">cowplot</a>: Merging multiple ggplots and labeling them respectively in one graph
+* <a href="http://ggplot2.org">ggplot2</a>: A popular plotting system in R
+* <a href="https://cran.r-project.org/package=reshape2">reshape2</a>: `melt` the data into a long-format or `cast` it into a wide-format
+
 
 # Here are two branches if you view on GitHub:
 ## master (code files and documents)
