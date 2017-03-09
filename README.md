@@ -18,7 +18,7 @@ It shows all nine national parks in Taiwan. The hyperlinks to each national park
 * <a href="https://corytu.github.io/R_Language_Playground/play_mtcars_dataset.html">Playing mtcars dataset</a> (Feb 2017)<br>
 It is a rather simple presentation with plotly tool. The data are from R built-in "mtcars" dataset.
 
-## Personal notes
+## Personal Notes
 *I might organize and publish some personal notes of R here (mostly in Mandarin), but it is not one of my priorities now.*
 ### Data cleaning and manipulation
 * TBA
