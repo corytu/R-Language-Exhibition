@@ -35,15 +35,15 @@ It is a rather simple presentation with plotly tool. The data are from R built-i
 * <a href="https://cran.r-project.org/package=reshape2">reshape2</a>: `melt` the data into a long-format or `cast` it into a wide-format. An example is provided <a href="https://corytu.github.io/R_Language_Playground/reshape2_melt.html">here</a>.
 
 # Here are two branches if you view on GitHub:
-## master (code files and documents)
-* R_Tutorial.pdf: A tutorial I gave to BLP in Oct 2016.
-* ui.R and server.R: Shiny app based on data from R built-in "airquality".
-* cachematrix.R: Create and cache a matrix. Find its inverse matrix if it exists.
-
 ## gh-pages (public html pages)
 * Plotting with R ggplot2: Organizing scatter plots, bar plots, and faceting. Slides are done with R markdown tools.
 * Air quality in New York in 1973: Using "airquality" data frame in R and demonstrating a simple shiny application.
 * Taiwan National Parks: Showing all nine national parks in Taiwan (Feb 2017) with leaflet and R.
 * Play mtcars dataset: A simple plotly demonstration with "mtcars" data frame in R.
+
+## master (code files and documents)
+* R_Tutorial.pdf: A tutorial I gave to BLP in Oct 2016.
+* ui.R and server.R: Shiny app based on data from R built-in "airquality".
+* cachematrix.R: Create and cache a matrix. Find its inverse matrix if it exists.
 
 *Copyrights &copy; 2017 by Yu-Zhen Tu. All rights reserved.*
