@@ -32,7 +32,7 @@ It is a rather simple presentation with plotly tool. The data are from R built-i
 ### Useful packages (ordered alphabetically)
 * <a href="https://cran.r-project.org/web/packages/cowplot/vignettes/introduction.html">cowplot</a>: Merging multiple ggplots and labeling them respectively in one graph.
 * <a href="http://ggplot2.org">ggplot2</a>: A popular plotting system in R.
-* <a href="https://cran.r-project.org/package=reshape2">reshape2</a>: `melt` the data into a long-format or `cast` it into a wide-format. An example provided <a href="https://corytu.github.io/R_Language_Playground/reshape2_melt.html">here</a>.
+* <a href="https://cran.r-project.org/package=reshape2">reshape2</a>: `melt` the data into a long-format or `cast` it into a wide-format. An example is provided <a href="https://corytu.github.io/R_Language_Playground/reshape2_melt.html">here</a>.
 
 # Here are two branches if you view on GitHub:
 ## master (code files and documents)
