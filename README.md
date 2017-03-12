@@ -32,19 +32,20 @@ It is a rather simple presentation with plotly tool. The data are from R built-i
 ### Useful packages (ordered alphabetically)
 * <a href="https://cran.r-project.org/web/packages/cowplot/vignettes/introduction.html">cowplot</a>: Merging multiple ggplots and labeling them respectively in one graph.
 * <a href="http://ggplot2.org">ggplot2</a>: A popular plotting system in R.
+* [magrittr] (https://cran.r-project.org/web/packages/magrittr/vignettes/magrittr.html): The most critical function is the "pipe-like" operator `%>%`, which allows people transmit a value or object to an expression or function call.
 * <a href="https://cran.r-project.org/package=reshape2">reshape2</a>: `melt` the data into a long-format or `cast` it into a wide-format. An example is provided <a href="https://corytu.github.io/R_Language_Playground/reshape2_melt.html">here</a>.
 
 # Here are two branches if you view on GitHub:
-## gh-pages (public html pages)
-* Plotting with R ggplot2: Organizing scatter plots, bar plots, and faceting. Slides are done with R markdown tools.
+## gh-pages (public html pages, ordered alphabetically below)
 * Air quality in New York in 1973: Using "airquality" data frame in R and demonstrating a simple shiny application.
-* Taiwan National Parks: Showing all nine national parks in Taiwan (Feb 2017) with leaflet and R.
 * Play mtcars dataset: A simple plotly demonstration with "mtcars" data frame in R.
+* Plotting with R ggplot2: Organizing scatter plots, bar plots, and faceting. Slides are done with R markdown tools.
+* Taiwan National Parks: Showing all nine national parks in Taiwan (Feb 2017) with leaflet and R.
 
-## master (code files and documents)
-* R_Tutorial.pdf: A tutorial I gave to BLP in Oct 2016.
+## master (code files and documents, ordered alphabetically below)
 * cachematrix.R: Create and cache a matrix. Find its inverse matrix if it exists.
+* R_Tutorial.pdf: A tutorial I gave to BLP in Oct 2016.
 
-Last update: March 12, 2017
+Last update: March 13, 2017
 
 *Copyrights &copy; 2017 by Yu-Zhen Tu. All rights reserved.*
