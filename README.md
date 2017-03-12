@@ -46,4 +46,6 @@ It is a rather simple presentation with plotly tool. The data are from R built-i
 * ui.R and server.R: Shiny app based on data from R built-in "airquality".
 * cachematrix.R: Create and cache a matrix. Find its inverse matrix if it exists.
 
+Last update: March 12, 2017
+
 *Copyrights &copy; 2017 by Yu-Zhen Tu. All rights reserved.*
