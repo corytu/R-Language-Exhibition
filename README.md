@@ -1,5 +1,4 @@
 # R Language Playground
-__*This respository is NOT intended to be licensed.*__
 
 ## Hello World!
 * My name is Yu-Zhen, and I am from Taiwan. Welcome to my playground for R language.
@@ -29,7 +28,8 @@ It is a rather simple presentation with plotly tool. The data are from R built-i
 * TBA
 
 ### Functions for general R programming
-* TBA
+* Using two colons `::` allows one to use functions (once) without loading the package. For example, calling `reshape2::melt` is equivalent to `library(reshape2)` or `require(reshape2)` before `melt`.
+* More TBA
 
 ### Useful packages (ordered alphabetically)
 * <a href="https://cran.r-project.org/package=car">car</a>: Short for "Companion to Applied Regression". Two of the useful functions are `Anova` and `Manova`, which can calculate type-II or type-III ANOVA and MANOVA respectively.
