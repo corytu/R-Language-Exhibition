@@ -3,12 +3,6 @@
 ## Hello World!
 **My name is Yu-Zhen, and I am from Taiwan. Welcome to my playground for R language.**
 
-## Tutorial Slides
-* <a href="https://corytu.github.io/R_Language_Playground/Plotting_with_R_ggplot2.html">Plotting with R: ggplot2</a> (Mar 2017)<br>
-After a brief introduction of R plotting systems, a guidance for creating scatter plots and bar plots including legends and facets for conditions is provided. It also covers methods to add error bars and regression lines. Practices come along so that people can apply their newly learned skills. Slides are done with R markdown.
-* <a href="https://github.com/corytu/R_Language_Playground/blob/master/R_Tutorial_20161012_BLP.pdf">R Programming tutorial</a> (Oct 2016)<br>
-An R tutorial which covers the history and overview of R, the characteristics of various R objects, and vectorized operations. It also contains the functions people use to input/output the data or scripts. The control structures and function writing in R are introduced in the end.
-
 ## Project Demonstration
 * <a href="https://corytu.shinyapps.io/old_populations_dist/">Old Population Proportions in Districts in Taiwan</a> (Mar 2017)<br>
 This Shiny app illustrates the percentages of old population in every district in Taiwan. Last updated in March, 2017. <a href="https://corytu.github.io/R_Language_Playground/Aged_Population_Proportions.html">This webpage</a> provides details of how it works in English.
@@ -18,6 +12,12 @@ My first Shiny application uses "airquality" data frame in R and plots the relat
 It shows all nine national parks in Taiwan. The hyperlinks to each national park are provided once users click the markers.
 * <a href="https://corytu.github.io/R_Language_Playground/play_mtcars_dataset.html">Playing mtcars dataset</a> (Feb 2017)<br>
 It is a rather simple presentation with plotly tool. The data are from R built-in "mtcars" dataset.
+
+## Tutorial Slides
+* <a href="https://corytu.github.io/R_Language_Playground/Plotting_with_R_ggplot2.html">Plotting with R: ggplot2</a> (Mar 2017)<br>
+After a brief introduction of R plotting systems, a guidance for creating scatter plots and bar plots including legends and facets for conditions is provided. It also covers methods to add error bars and regression lines. Practices come along so that people can apply their newly learned skills. Slides are done with R markdown.
+* <a href="https://github.com/corytu/R_Language_Playground/blob/master/R_Tutorial_20161012_BLP.pdf">R Programming tutorial</a> (Oct 2016)<br>
+An R tutorial which covers the history and overview of R, the characteristics of various R objects, and vectorized operations. It also contains the functions people use to input/output the data or scripts. The control structures and function writing in R are introduced in the end.
 
 ## Personal Notes
 *I might organize and publish some personal notes of R here (mostly in Mandarin), but it is not one of my priorities now.*
@@ -34,6 +34,7 @@ It is a rather simple presentation with plotly tool. The data are from R built-i
 ### Useful packages (ordered alphabetically)
 * <a href="https://cran.r-project.org/package=car">car</a>: Short for "Companion to Applied Regression". Two of the useful functions are `Anova` and `Manova`, which can calculate type-II or type-III ANOVA and MANOVA respectively.
 * <a href="https://cran.r-project.org/web/packages/cowplot/vignettes/introduction.html">cowplot</a>: Merging multiple ggplots and labeling them respectively in one graph.
+* <a href="https://cran.r-project.org/package=e1071">e1071</a>: LIBSVM package for R.
 * <a href="http://ggplot2.org">ggplot2</a>: A popular plotting system in R.
 * <a href="https://cran.r-project.org/web/packages/magrittr/vignettes/magrittr.html">magrittr</a>: The "pipe-like" operator `%>%` allows people to transmit a value or object to an expression or function call.
 * <a href="https://cran.r-project.org/package=reshape2">reshape2</a>: `melt` the data into a long-format or `cast` it into a wide-format. An example is provided <a href="https://corytu.github.io/R_Language_Playground/reshape2_melt.html">here</a>.
