@@ -30,10 +30,12 @@ It is a rather simple presentation with plotly tool. The data are from R built-i
 * TBA
 
 ### Useful packages (ordered alphabetically)
+* <a href="https://cran.r-project.org/package=car">car</a>: Short for "Companion to Applied Regression". Two of the useful functions are `Anova` and `Manova`, which can calculate type-II or type-III ANOVA and MANOVA respectively.
 * <a href="https://cran.r-project.org/web/packages/cowplot/vignettes/introduction.html">cowplot</a>: Merging multiple ggplots and labeling them respectively in one graph.
 * <a href="http://ggplot2.org">ggplot2</a>: A popular plotting system in R.
 * <a href="https://cran.r-project.org/web/packages/magrittr/vignettes/magrittr.html">magrittr</a>: The "pipe-like" operator `%>%` allows people to transmit a value or object to an expression or function call.
 * <a href="https://cran.r-project.org/package=reshape2">reshape2</a>: `melt` the data into a long-format or `cast` it into a wide-format. An example is provided <a href="https://corytu.github.io/R_Language_Playground/reshape2_melt.html">here</a>.
+* <a href="https://shiny.rstudio.com/">shiny</a>: Building interactive interface and present data to others even they don't know R. Its tutorial is very worth reading.
 
 # Here are two branches if you view on GitHub:
 ## gh-pages (public html pages, ordered alphabetically below)
