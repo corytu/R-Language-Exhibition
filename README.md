@@ -22,14 +22,14 @@ An R tutorial which covers the history and overview of R, the characteristics of
 ## Personal Notes
 *I might organize and publish some personal notes of R here (mostly in Mandarin), but it is not one of my priorities now.*
 ### Data cleaning and manipulation
-* TBA
+* _TBA_
 
 ### Data visualization
-* TBA
+* _TBA_
 
 ### Functions for general R programming
 * Using two colons `::` allows one to use functions (once) without loading the package. For example, calling `reshape2::melt` is equivalent to `library(reshape2)` or `require(reshape2)` before `melt`.
-* More TBA
+* _More TBA_
 
 ### Useful packages (ordered alphabetically)
 * <a href="https://cran.r-project.org/package=car">car</a>: Short for "Companion to Applied Regression". Two of the useful functions are `Anova` and `Manova`, which can calculate type-II or type-III ANOVA and MANOVA respectively.
