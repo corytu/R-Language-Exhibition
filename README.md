@@ -38,15 +38,10 @@ It is a rather simple presentation with plotly tool. The data are from R built-i
 * <a href="https://shiny.rstudio.com/">shiny</a>: Building interactive interface and present data to others even they don't know R. Its tutorial is very worth reading.
 
 # Here are two branches if you view on GitHub:
-## gh-pages (public html pages, ordered alphabetically below)
-* Air quality in New York in 1973: Using "airquality" data frame in R and demonstrating a simple shiny application.
-* Play mtcars dataset: A simple plotly demonstration with "mtcars" data frame in R.
-* Plotting with R ggplot2: Organizing scatter plots, bar plots, and faceting. Slides are done with R markdown tools.
-* Taiwan National Parks: Showing all nine national parks in Taiwan (Feb 2017) with leaflet and R.
-
-## master (code files and documents, ordered alphabetically below)
-* cachematrix.R: Create and cache a matrix. Find its inverse matrix if it exists.
-* R_Tutorial.pdf: A tutorial I gave to BLP in Oct 2016.
+* gh-pages (public html pages, see introduction above)
+* master (code files and documents, ordered alphabetically below)
+    * cachematrix.R: Create and cache a matrix. Find its inverse matrix if it exists.
+    * R_Tutorial.pdf: A tutorial I gave to BLP in Oct 2016.
 
 Last update: March 13, 2017
 
