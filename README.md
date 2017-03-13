@@ -1,7 +1,7 @@
 # R Language Playground
 
 ## Hello World!
-* My name is Yu-Zhen, and I am from Taiwan. Welcome to my playground for R language.
+**My name is Yu-Zhen, and I am from Taiwan. Welcome to my playground for R language.**
 
 ## Tutorial Slides
 * <a href="https://corytu.github.io/R_Language_Playground/Plotting_with_R_ggplot2.html">Plotting with R: ggplot2</a> (Mar 2017)<br>
