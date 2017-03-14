@@ -5,7 +5,7 @@
 
 ## Project Demonstration
 * <a href="https://corytu.shinyapps.io/old_populations_dist/">Old Population Proportions in Districts in Taiwan</a> (Mar 2017)<br>
-This Shiny app illustrates the percentages of old population in every district in Taiwan. Last updated in March, 2017. <a href="https://corytu.github.io/R_Language_Playground/Aged_Population_Proportions.html">This webpage</a> provides details of how it works in English.
+This Shiny app illustrates the percentages of old population in every district in Taiwan. Last updated in March, 2017. <a href="https://corytu.github.io/R_Language_Playground/Old_Population_Proportions.html">This webpage</a> provides details of how it works in English.
 * <a href="https://corytu.shinyapps.io/airquality/">Air quality in New York in 1973</a> (Feb 2017)<br>
 My first Shiny application uses "airquality" data frame in R and plots the relationship between selected variables. Details are available <a href="https://corytu.github.io/R_Language_Playground/Air_Quality_in_New_York_in_1973.html">here</a>.
 * <a href="https://corytu.github.io/R_Language_Playground/Taiwan_National_Parks.html">Taiwan National Parks</a> (Feb 2017)<br>
