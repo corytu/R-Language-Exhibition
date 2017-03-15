@@ -49,6 +49,6 @@ An R tutorial which covers the history and overview of R, the characteristics of
     * cachematrix.R: Create and cache a matrix. Find its inverse matrix if it exists.
     * R_Tutorial.pdf: A tutorial I gave to BLP in Oct 2016.
 
-Last update: March 13, 2017
+Last update: March 15, 2017
 
 *Copyrights &copy; 2017 by Yu-Zhen Tu. All rights reserved.*
