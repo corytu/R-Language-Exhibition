@@ -22,27 +22,39 @@ An R tutorial which covers the history and overview of R, the characteristics of
 ## Personal Notes
 *I might organize and publish some personal notes of R here (mostly in Mandarin), but it is not one of my priorities now.*
 ### Data cleaning and manipulation
-* __Ordering the data frame with its column(s).__ `order` function can do the trick here. For example, `airquality[order(airquality$Month),]` and `airquality[order(airquality$Day),]` order that data frame by Month and Day respectively. Multiple argumets in `order` are allowed.
+* __Ordering the data frame with its column(s)__<br>
+`order` function can do the trick here. For example, `airquality[order(airquality$Month),]` and `airquality[order(airquality$Day),]` order that data frame by Month and Day respectively. Multiple argumets in `order` are allowed.
 * _TBA_
 
 ### Data visualization
+* <a href="http://stackoverflow.com/questions/34889766/what-is-the-width-argument-in-position-dodge">What is the width argument in position_dodge?</a><br>
+Decent explanation and demonstration of mechanisms of `ggplot2::position_dodge`.
 * _TBA_
 
 ### Functions for general R programming
-* __Using functions (once) without loading the package.__ Specify the package and function separated by `::`. For example, calling `reshape2::melt` is equivalent to `library(reshape2)` or `require(reshape2)` before `melt`.
+* __Using functions (once) without loading the package__<br>
+Specify the package and function separated by `::`. For example, calling `reshape2::melt` is equivalent to `library(reshape2)` or `require(reshape2)` before `melt`.
 * _More TBA_
 
 ### Useful packages (ordered alphabetically)
-* <a href="https://cran.r-project.org/package=car">car</a>: Short for "Companion to Applied Regression". Two of the useful functions are `Anova` and `Manova`, which can calculate type-II or type-III ANOVA and MANOVA respectively.
-* <a href="https://cran.r-project.org/web/packages/cowplot/vignettes/introduction.html">cowplot</a>: Merging multiple ggplots and labeling them respectively in one graph.
-* <a href="https://cran.r-project.org/package=e1071">e1071</a>: LIBSVM package for R.
-* <a href="http://ggplot2.org">ggplot2</a>: A popular plotting system in R.
-* <a href="https://cran.r-project.org/web/packages/magrittr/vignettes/magrittr.html">magrittr</a>: The "pipe-like" operator `%>%` allows people to transmit a value or object to an expression or function call.
-* <a href="https://cran.r-project.org/package=reshape2">reshape2</a>: `melt` the data into a long-format or `cast` it into a wide-format. An example is provided <a href="https://corytu.github.io/R_Language_Playground/reshape2_melt.html">here</a>.
-* <a href="https://shiny.rstudio.com/">shiny</a>: Building interactive interface and present data to others even they don't know R. Its tutorial is very worth reading.
+* <a href="https://cran.r-project.org/package=car">car</a><br>
+Short for "Companion to Applied Regression". Two of the useful functions are `Anova` and `Manova`, which can calculate type-II or type-III ANOVA and MANOVA respectively.
+* <a href="https://cran.r-project.org/web/packages/cowplot/vignettes/introduction.html">cowplot</a><br>
+Merging multiple ggplots and labeling them respectively in one graph.
+* <a href="https://cran.r-project.org/package=e1071">e1071</a><br>
+LIBSVM package for R.
+* <a href="http://ggplot2.org">ggplot2</a><br>
+A popular plotting system in R.
+* <a href="https://cran.r-project.org/web/packages/magrittr/vignettes/magrittr.html">magrittr</a><br>
+The "pipe-like" operator `%>%` allows people to transmit a value or object to an expression or function call.
+* <a href="https://cran.r-project.org/package=reshape2">reshape2</a><br>
+`melt` the data into a long-format or `cast` it into a wide-format. An example is provided <a href="https://corytu.github.io/R_Language_Playground/reshape2_melt.html">here</a>.
+* <a href="https://shiny.rstudio.com/">shiny</a><br>
+Building interactive interface and present data to others even they don't know R. Its tutorial is very worth reading.
 
 ### My accepted answers on Stack Overflow
-* <a href="http://stackoverflow.com/questions/42771789/extracting-values-from-nested-lists/">Extracting values from nested lists</a>: The "lists" here does not mean lists in terms of R language though. It's just results of a multiple choice question.
+* <a href="http://stackoverflow.com/questions/42771789/extracting-values-from-nested-lists/">Extracting values from nested lists</a><br>
+The "lists" here does not mean lists in terms of R language though. It's just results of a multiple choice question.
 
 # Here are two branches if you view on GitHub:
 * gh-pages (public html pages, see introduction above)
