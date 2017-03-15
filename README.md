@@ -20,21 +20,18 @@ After a brief introduction of R plotting systems, a guidance for creating scatte
 An R tutorial which covers the history and overview of R, the characteristics of various R objects, and vectorized operations. It also contains the functions people use to input/output the data or scripts. The control structures and function writing in R are introduced in the end.
 
 ## Personal Notes
-*I might organize and publish some personal notes of R here (mostly in Mandarin), but it is not one of my priorities now.*
+*I might organize and publish some personal notes of R here (probably mostly in Mandarin), but it is not one of my priorities now.*
 ### Data cleaning and manipulation
 * __Ordering the data frame with its column(s)__<br>
 `order` function can do the trick here. For example, `airquality[order(airquality$Month),]` and `airquality[order(airquality$Day),]` order that data frame by Month and Day respectively. Multiple argumets in `order` are allowed.
-* _TBA_
 
 ### Data visualization
 * <a href="http://stackoverflow.com/questions/34889766/what-is-the-width-argument-in-position-dodge">What is the width argument in position_dodge?</a><br>
 Decent explanation and demonstration of mechanisms of `ggplot2::position_dodge`.
-* _TBA_
 
 ### Functions for general R programming
 * __Using functions (once) without loading the package__<br>
 Specify the package and function separated by `::`. For example, calling `reshape2::melt` is equivalent to `library(reshape2)` or `require(reshape2)` before `melt`.
-* _More TBA_
 
 ### Useful packages (ordered alphabetically)
 * <a href="https://cran.r-project.org/package=car">car</a><br>
