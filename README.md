@@ -21,9 +21,6 @@ An R tutorial which covers the history and overview of R, the characteristics of
 
 ## Personal Notes
 *I might organize and publish some personal notes of R here (mostly in Mandarin), but it is not one of my priorities now.*
-### My accepted answers on Stack Overflow
-* <a href="http://stackoverflow.com/questions/42771789/extracting-values-from-nested-lists/">Extracting values from nested lists</a>: The "lists" here does not mean lists in terms of R language though. It's just results of a multiple choice question.
-
 ### Data cleaning and manipulation
 * _TBA_
 
@@ -42,6 +39,9 @@ An R tutorial which covers the history and overview of R, the characteristics of
 * <a href="https://cran.r-project.org/web/packages/magrittr/vignettes/magrittr.html">magrittr</a>: The "pipe-like" operator `%>%` allows people to transmit a value or object to an expression or function call.
 * <a href="https://cran.r-project.org/package=reshape2">reshape2</a>: `melt` the data into a long-format or `cast` it into a wide-format. An example is provided <a href="https://corytu.github.io/R_Language_Playground/reshape2_melt.html">here</a>.
 * <a href="https://shiny.rstudio.com/">shiny</a>: Building interactive interface and present data to others even they don't know R. Its tutorial is very worth reading.
+
+### My accepted answers on Stack Overflow
+* <a href="http://stackoverflow.com/questions/42771789/extracting-values-from-nested-lists/">Extracting values from nested lists</a>: The "lists" here does not mean lists in terms of R language though. It's just results of a multiple choice question.
 
 # Here are two branches if you view on GitHub:
 * gh-pages (public html pages, see introduction above)
