@@ -21,6 +21,9 @@ An R tutorial which covers the history and overview of R, the characteristics of
 
 ## Personal Notes
 *I might organize and publish some personal notes of R here (mostly in Mandarin), but it is not one of my priorities now.*
+### My accepted answers on Stack Overflow
+* <a href="http://stackoverflow.com/questions/42771789/extracting-values-from-nested-lists/">Extracting values from nested lists</a>: The "lists" here does not mean lists in terms of R language though. It's just results of a multiple choice question.
+
 ### Data cleaning and manipulation
 * _TBA_
 
