@@ -22,13 +22,14 @@ An R tutorial which covers the history and overview of R, the characteristics of
 ## Personal Notes
 *I might organize and publish some personal notes of R here (mostly in Mandarin), but it is not one of my priorities now.*
 ### Data cleaning and manipulation
+* __Ordering the data frame with its column(s).__ `order` function can do the trick here. For example, `airquality[order(airquality$Month),]` and `airquality[order(airquality$Day),]` order that data frame by Month and Day respectively. Multiple argumets in `order` are allowed.
 * _TBA_
 
 ### Data visualization
 * _TBA_
 
 ### Functions for general R programming
-* Using two colons `::` allows one to use functions (once) without loading the package. For example, calling `reshape2::melt` is equivalent to `library(reshape2)` or `require(reshape2)` before `melt`.
+* __Using functions (once) without loading the package.__ Specify the package and function separated by `::`. For example, calling `reshape2::melt` is equivalent to `library(reshape2)` or `require(reshape2)` before `melt`.
 * _More TBA_
 
 ### Useful packages (ordered alphabetically)
