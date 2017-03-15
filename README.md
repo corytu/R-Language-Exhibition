@@ -26,6 +26,8 @@ An R tutorial which covers the history and overview of R, the characteristics of
 `order` function can do the trick here. For example, `airquality[order(airquality$Month),]` and `airquality[order(airquality$Day),]` order that data frame by Month and Day respectively. Multiple argumets in `order` are allowed.
 
 ### Data visualization
+* <a href="http://stackoverflow.com/questions/10357768/plotting-lines-and-the-group-aesthetic-in-ggplot2">Plotting lines and the group aesthetic in ggplot2</a><br>
+A good thing to know when using `ggplot2` to plot a line chart where x-axis is a categorical variable.
 * <a href="http://stackoverflow.com/questions/34889766/what-is-the-width-argument-in-position-dodge">What is the width argument in position_dodge?</a><br>
 Decent explanation and demonstration of mechanisms of `ggplot2::position_dodge`.
 
