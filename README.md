@@ -46,6 +46,8 @@ LIBSVM package for R.
 A popular plotting system in R.
 * <a href="https://cran.r-project.org/web/packages/magrittr/vignettes/magrittr.html">magrittr</a><br>
 The "pipe-like" operator `%>%` allows people to transmit a value or object to an expression or function call.
+* <a href="https://cran.r-project.org/package=MCMCglmm">MCMCglmm</a><br>
+A package for fitting Bayesian mixed models in R. More introduction and tutorial <a href="https://github.com/tmalsburg/MCMCglmm-intro">here</a>.
 * <a href="https://plot.ly/r/">plotly</a><br>
 A powerful package to build interactive plots. Its `plot_ly` function creates various types of plots, and `ggplotly` turns most of `ggplot2` objects interactive.
 * <a href="https://cran.r-project.org/package=reshape2">reshape2</a><br>
