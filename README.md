@@ -63,6 +63,8 @@ The "lists" here does not mean lists in terms of R language though. It's just re
     * cachematrix.R: Create and cache a matrix. Find its inverse matrix if it exists.
     * R_Tutorial.pdf: A tutorial I gave to BLP in Oct 2016.
 
+# Used books selling
+
 <a href='http://www.taaze.tw/container_seller_view.html?ci=13564930'><img src='http://www.taaze.tw/images/snd/snd_banner468X60.gif'/></a>
 
 Last update: March 16, 2017
