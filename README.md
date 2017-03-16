@@ -65,4 +65,6 @@ The "lists" here does not mean lists in terms of R language though. It's just re
 
 Last update: March 15, 2017
 
+<a href='http://www.taaze.tw/container_seller_view.html?ci=13564930'><img src='http://www.taaze.tw/images/snd/snd_banner468X60.gif'/></a>
+
 *Copyrights &copy; 2017 by Yu-Zhen Tu. All rights reserved.*
