@@ -55,11 +55,6 @@ A powerful package to build interactive plots. Its `plot_ly` function creates va
 * <a href="https://shiny.rstudio.com/">shiny</a><br>
 Building interactive interface and present data to others even they don't know R. Its tutorial is very worth reading.
 
-### My accepted answers on Stack Overflow or PTT
-* <a href="https://www.ptt.cc/bbs/R_Language/M.1489669988.A.D66.html">Categorizing with multiple criteria</a> (Mar 2017)
-* <a href="http://stackoverflow.com/questions/42771789/extracting-values-from-nested-lists/">Extracting values from nested lists</a> (Mar 2017)<br>
-The "lists" here does not mean lists in terms of R language though. It's just results of a multiple choice question.
-
 # Here are two branches if you view on GitHub:
 * gh-pages (public html pages, see introduction above)
 * master (code files and documents, ordered alphabetically below)
