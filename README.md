@@ -44,6 +44,8 @@ Merging multiple ggplots and labeling them respectively in one graph.
 LIBSVM package for R.
 * <a href="http://ggplot2.org">ggplot2</a><br>
 A popular plotting system in R.
+* <a href="https://cran.r-project.org/package=gridExtra">gridExtra</a><br>
+"Miscellaneous Functions for 'Grid' Graphics."
 * <a href="https://cran.r-project.org/web/packages/magrittr/vignettes/magrittr.html">magrittr</a><br>
 The "pipe-like" operator `%>%` allows people to transmit a value or object to an expression or function call.
 * <a href="https://cran.r-project.org/package=MCMCglmm">MCMCglmm</a><br>
@@ -65,6 +67,6 @@ Building interactive interface and present data to others even they don't know R
 
 <a href='http://www.taaze.tw/container_seller_view.html?ci=13564930'><img src='http://www.taaze.tw/images/snd/snd_banner468X60.gif'/></a>
 
-Last update: March 16, 2017
+Last update: March 18, 2017
 
 *Copyrights &copy; 2017 by Yu-Zhen Tu. All rights reserved.*
