@@ -32,6 +32,8 @@ A good thing to know when using `ggplot2` to plot a line chart where x-axis is a
 Decent explanation and demonstration of mechanisms of `ggplot2::position_dodge`.
 
 ### Functions for general R programming
+* __Generating messages for function users__<br>
+`message` is used for generating a diagnostic message, while `warning` and `stop` are for generating warnings and fetal errors respectively.
 * __Using functions (once) without loading the package__<br>
 Specify the package and function separated by `::`. For example, calling `reshape2::melt` is equivalent to `library(reshape2)` or `require(reshape2)` before `melt`.
 
@@ -67,6 +69,6 @@ Building interactive interface and present data to others even they don't know R
 
 <a href='http://www.taaze.tw/container_seller_view.html?ci=13564930'><img src='http://www.taaze.tw/images/snd/snd_banner468X60.gif'/></a>
 
-Last update: March 18, 2017
+Last update: March 19, 2017
 
 *Copyrights &copy; 2017 by Yu-Zhen Tu. All rights reserved.*
