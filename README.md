@@ -32,6 +32,8 @@ A good thing to know when using `ggplot2` to plot a line chart where x-axis is a
 Decent explanation and demonstration of mechanisms of `ggplot2::position_dodge`.
 
 ### Functions for general R programming
+* __All arguments after an ellipsis must have default values__<br>
+For example, `paste (..., sep = " ", collapse = NULL)` in its documentation.
 * __Generating messages for function users__<br>
 `message` is used for generating a diagnostic message, while `warning` and `stop` are for generating warnings and fetal errors respectively.
 * __Using functions (once) without loading the package__<br>
