@@ -35,7 +35,7 @@ Decent explanation and demonstration of mechanisms of `ggplot2::position_dodge`.
 * __All arguments after an ellipsis must have default values__<br>
 For example, `paste (..., sep = " ", collapse = NULL)` in its documentation.
 * __Generating messages for function users__<br>
-`message` is used for generating a diagnostic message, while `warning` and `stop` are for generating warnings and fetal errors respectively.
+`message` is used for generating a diagnostic message, while `warning` and `stop` are for generating warnings and fetal errors respectively. `stopifnot`, on the other hand, is "If any of the expressions in `...` are not all TRUE, `stop` is called, producing an error message indicating the first of the elements of `...` which were not true."
 * __Using functions (once) without loading the package__<br>
 Specify the package and function separated by `::`. For example, calling `reshape2::melt` is equivalent to `library(reshape2)` or `require(reshape2)` before `melt`.
 
