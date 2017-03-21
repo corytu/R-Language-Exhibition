@@ -49,7 +49,7 @@ LIBSVM package for R.
 * <a href="http://ggplot2.org">ggplot2</a><br>
 A popular plotting system in R.
 * <a href="https://cran.r-project.org/package=gridExtra">gridExtra</a><br>
-"Miscellaneous Functions for 'Grid' Graphics."
+"Miscellaneous Functions for 'Grid' Graphics." A tutorial can be found <a href="http://www.sthda.com/english/wiki/ggplot2-easy-way-to-mix-multiple-graphs-on-the-same-page-r-software-and-data-visualization">here</a>.
 * <a href="https://cran.r-project.org/web/packages/magrittr/vignettes/magrittr.html">magrittr</a><br>
 The "pipe-like" operator `%>%` allows people to transmit a value or object to an expression or function call.
 * <a href="https://cran.r-project.org/package=MCMCglmm">MCMCglmm</a><br>
@@ -71,6 +71,6 @@ Building interactive interface and present data to others even they don't know R
 
 <a href='http://www.taaze.tw/container_seller_view.html?ci=13564930'><img src='http://www.taaze.tw/images/snd/snd_banner468X60.gif'/></a>
 
-Last update: March 19, 2017
+Last update: March 21, 2017
 
 *Copyrights &copy; 2017 by Yu-Zhen Tu. All rights reserved.*
