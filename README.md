@@ -22,7 +22,7 @@ An R tutorial which covers the history and overview of R, the characteristics of
 ## Personal Notes
 *I might organize and publish some personal notes of R here (probably mostly in Mandarin), but it is not one of my priorities now.*
 ### Data cleaning and manipulation
-* __Ordering the data frame with its column(s)__<br>
+* __Ordering the data frame with data in its column(s)__<br>
 `order` function can do the trick here. For example, `airquality[order(airquality$Month),]` and `airquality[order(airquality$Day),]` order that data frame by Month and Day respectively. Multiple argumets in `order` are allowed.
 
 ### Data visualization
@@ -71,6 +71,6 @@ Building interactive interface and present data to others even they don't know R
 
 <a href='http://www.taaze.tw/container_seller_view.html?ci=13564930'><img src='http://www.taaze.tw/images/snd/snd_banner468X60.gif'/></a>
 
-Last update: March 25, 2017
+Last update: March 26, 2017
 
 *Copyrights &copy; 2017 by Yu-Zhen Tu. All rights reserved.*
