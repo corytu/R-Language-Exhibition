@@ -46,6 +46,8 @@ Specify the package and function separated by `::`. For example, calling `reshap
 Short for "Companion to Applied Regression". Two of the useful functions are `Anova` and `Manova`, which can calculate type-II or type-III ANOVA and MANOVA respectively.
 * <a href="https://cran.r-project.org/web/packages/cowplot/vignettes/introduction.html">cowplot</a><br>
 Merging multiple ggplots and labeling them respectively in one graph.
+* [dplyr](https://cran.r-project.org/web/packages/dplyr/vignettes/introduction.html)<br>
+Some other ways to manipulate or cleanse data.
 * <a href="https://cran.r-project.org/package=e1071">e1071</a><br>
 LIBSVM package for R.
 * <a href="http://ggplot2.org">ggplot2</a><br>
@@ -74,6 +76,6 @@ Building interactive interface and present data to others even they don't know R
 
 <a href='http://www.taaze.tw/container_seller_view.html?ci=13564930'><img src='http://www.taaze.tw/images/snd/snd_banner468X60.gif'/></a>
 
-Last update: March 26, 2017
+Last update: March 31, 2017
 
 *Copyrights &copy; 2017 by Yu-Zhen Tu. All rights reserved.*
