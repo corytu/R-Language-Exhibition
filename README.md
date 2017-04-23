@@ -33,7 +33,7 @@ A good thing to know when using `ggplot2` to plot a line chart where x-axis is a
 * <a href="http://stackoverflow.com/questions/34889766/what-is-the-width-argument-in-position-dodge">What is the width argument in position_dodge?</a><br>
 Decent explanation and demonstration of mechanisms of `ggplot2::position_dodge`.
 * [Share a legend between multiple plots using grid.arrange](https://github.com/tidyverse/ggplot2/wiki/Share-a-legend-between-two-ggplot2-graphs)<br>
-Using `grid` to place the plots and the legends in an arbitrary layout.
+Using `grid` to place the plots and the legends in an arbitrary layout. I also modified this function to allow shared axes titles and to specify only ncol or nrow. The modified scripts is in the master branch.
 
 ### Functions for general R programming
 * __All arguments after an ellipsis must have default values__<br>
@@ -71,13 +71,10 @@ Building interactive interface and present data to others even they don't know R
 * gh-pages (public html pages, see introduction above)
 * master (code files and documents, ordered alphabetically below)
     * cachematrix.R: Create and cache a matrix. Find its inverse matrix if it exists.
+    * my_grid_arrange_shared_legend.R: Arranging grobs with a shared legend. Shared axes are also allowed.
     * R_Tutorial.pdf: A tutorial I gave to BLP in Oct 2016.
     * Taiwan_tourism_economics.R: Create a motion chart by `googleVis` package.
 
-# Used books selling
-
-<a href='http://www.taaze.tw/container_seller_view.html?ci=13564930'><img src='http://www.taaze.tw/images/snd/snd_banner468X60.gif'/></a>
-
-Last update: April 21, 2017
+Last update: April 23, 2017
 
 *Copyrights &copy; 2017 by Yu-Zhen Tu. All rights reserved.*
