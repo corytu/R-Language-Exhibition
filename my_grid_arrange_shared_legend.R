@@ -1,3 +1,18 @@
+# Modified from [Share a legend between two ggplot2 graphs](https://github.com/tidyverse/ggplot2/wiki/Share-a-legend-between-two-ggplot2-graphs)
+# Author: Yu-Zhen Tu
+# Date: April 23, 2017
+# --
+# Description:
+# This function combines ggplot objects into one plot and lets the common legend share across the original plots.
+# In addition, my modified function allows users to share a common x-axis or y-axis across all original plots.
+# If the legend position is at bottom with a common x-axis, a warning message is given to the users in order to avoid the possible confusion.
+# --
+# Arguments:
+# ...: ggplot objects to be combined.
+# ncol, nrow: Number of columns and rows of the combined plot. If one of them is unspecified, it will be automatically carried with number of "ggplot objects devided by specified ncol or nrow".
+# position: Character string. Final position of the common legend. It can be either "right" or "bottom".
+# common.x, common.y: Logical values. Whether or not the x-axis or y-axis is common across the ggplot objects?
+
 library(ggplot2)
 library(gridExtra)
 library(grid)
