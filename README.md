@@ -13,13 +13,13 @@
 ## Project Demonstration
 * [Relationships between Visitor Numbers and Taiwan Economics](https://corytu.github.io/R_Language_Playground/Relationships_between_Visitor_Numbers_and_Taiwan_Economics.html) (Mar 2017)<br>
 The webpage implements `googleVis` package of R and demonstrates the relationships between visitor numbers and multiple economics indexes in Taiwan. Taiwan's economic system seems to have been strongly affected by China. We need to find our way to guarantee our economy growth without China's support if we want independence of our country.
-* __<a href="https://corytu.shinyapps.io/old_populations_dist/">Old Population Proportions in Districts in Taiwan</a> (Mar 2017)<br>__
-This Shiny app illustrates the percentages of old population in every district in Taiwan. It is widely referred in local health authorities in Taiwan, helping the promotion of primary health and creating an elder-friendly society. Last updated in March, 2017. <a href="https://corytu.github.io/R_Language_Playground/Old_Population_Proportions.html">This webpage</a> provides details of how it works in English.
-* <a href="https://corytu.shinyapps.io/airquality/">Air quality in New York in 1973</a> (Feb 2017)<br>
+* __[Old Population Proportions in Districts in Taiwan](https://corytu.shinyapps.io/old_populations_dist/) (Mar 2017)<br>__
+This Shiny app illustrates the percentages of old population in every district in Taiwan. It is widely referred in local health authorities in Taiwan, helping the promotion of primary health and creating an elder-friendly society. Last updated in March, 2017. [This webpage](https://corytu.github.io/R_Language_Playground/Old_Population_Proportions.html) provides details of how it works in English.
+* [Air quality in New York in 1973](https://corytu.shinyapps.io/airquality/) (Feb 2017)<br>
 My first Shiny application uses "airquality" data frame in R and plots the relationship between selected variables. Details are available <a href="https://corytu.github.io/R_Language_Playground/Air_Quality_in_New_York_in_1973.html">here</a>.
-* <a href="https://corytu.github.io/R_Language_Playground/Taiwan_National_Parks.html">Taiwan National Parks</a> (Feb 2017)<br>
+* [Taiwan National Parks](https://corytu.github.io/R_Language_Playground/Taiwan_National_Parks.html) (Feb 2017)<br>
 It shows all nine national parks in Taiwan. The hyperlinks to each national park are provided once users click the markers.
-* <a href="https://corytu.github.io/R_Language_Playground/play_mtcars_dataset.html">Playing mtcars dataset</a> (Feb 2017)<br>
+* [Playing mtcars dataset](https://corytu.github.io/R_Language_Playground/play_mtcars_dataset.html) (Feb 2017)<br>
 It is a rather simple presentation with plotly tool. The data are from R built-in "mtcars" dataset.
 
 ## Given Tutorial Slides
