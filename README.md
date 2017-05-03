@@ -1,4 +1,4 @@
-# R Language Playground (with two branches)
+# R Language Playground (two branches)
 * gh-pages (public html pages, see introduction below)
 * master (code files and documents, ordered alphabetically below)
     * cachematrix.R: Create and cache a matrix. Find its inverse matrix if it exists.
