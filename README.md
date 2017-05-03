@@ -1,6 +1,6 @@
 # R Language Playground (two branches)
-* gh-pages (public html pages, see introduction below)
-* master (code files and documents, ordered alphabetically below)
+1. gh-pages (public html pages, see introduction below)
+2. master (code files and documents, ordered alphabetically below)
     * cachematrix.R: Create and cache a matrix. Find its inverse matrix if it exists.
     * my_grid_arrange_shared_legend.R: Arrange grobs with a shared legend. Shared axes are also allowed.
     * R_Tutorial.pdf: A tutorial I gave to BLP in Oct 2016.
@@ -8,12 +8,12 @@
     * ui.R, server.R: A Shiny application showing the proportions of older adults across districts in Taiwan.
 
 ## Hello World!
-**My name is Yu-Zhen, and I am from Taiwan. Welcome to my playground for R language.**
+**My name is Yu-Zhen, and I am from Taiwan.**
 
 ## Project Demonstration
 * [Relationships between Visitor Numbers and Taiwan Economics](https://corytu.github.io/R_Language_Playground/Relationships_between_Visitor_Numbers_and_Taiwan_Economics.html) (Mar 2017)<br>
 The webpage implements `googleVis` package of R and demonstrates the relationships between visitor numbers and multiple economics indexes in Taiwan. Taiwan's economic system seems to have been strongly affected by China. We need to find our way to guarantee our economy growth without China's support if we want independence of our country.
-* <a href="https://corytu.shinyapps.io/old_populations_dist/">Old Population Proportions in Districts in Taiwan</a> (Mar 2017)<br>
+* __<a href="https://corytu.shinyapps.io/old_populations_dist/">Old Population Proportions in Districts in Taiwan</a> (Mar 2017)<br>__
 This Shiny app illustrates the percentages of old population in every district in Taiwan. It is widely referred in local health authorities in Taiwan, helping the promotion of primary health and creating an elder-friendly society. Last updated in March, 2017. <a href="https://corytu.github.io/R_Language_Playground/Old_Population_Proportions.html">This webpage</a> provides details of how it works in English.
 * <a href="https://corytu.shinyapps.io/airquality/">Air quality in New York in 1973</a> (Feb 2017)<br>
 My first Shiny application uses "airquality" data frame in R and plots the relationship between selected variables. Details are available <a href="https://corytu.github.io/R_Language_Playground/Air_Quality_in_New_York_in_1973.html">here</a>.
@@ -22,16 +22,15 @@ It shows all nine national parks in Taiwan. The hyperlinks to each national park
 * <a href="https://corytu.github.io/R_Language_Playground/play_mtcars_dataset.html">Playing mtcars dataset</a> (Feb 2017)<br>
 It is a rather simple presentation with plotly tool. The data are from R built-in "mtcars" dataset.
 
-## Tutorial Slides
+## Given Tutorial Slides
 * <a href="https://corytu.github.io/R_Language_Playground/Plotting_with_R_ggplot2.html">Plotting with R: ggplot2</a> (Mar 2017)<br>
 After a brief introduction of R plotting systems, a guidance for creating scatter plots and bar plots including legends and facets for conditions is provided. It also covers methods to add error bars and regression lines. Practices come along so that people can apply their newly learned skills. Slides are done with R markdown.
 * <a href="https://github.com/corytu/R_Language_Playground/blob/master/R_Tutorial_20161012_BLP.pdf">R Programming tutorial</a> (Oct 2016)<br>
 An R tutorial which covers the history and overview of R, the characteristics of various R objects, and vectorized operations. It also contains the functions people use to input/output the data or scripts. The control structures and function writing in R are introduced in the end.
 
 ## Personal Notes
-*I might organize and publish some personal notes of R here (probably mostly in Mandarin), but it is not one of my priorities now.*
 ### Data cleaning and manipulation
-* __Ordering the data frame with data in its column(s)__<br>
+* _Ordering the data frame with data in its column(s)_<br>
 `order` function can do the trick here. For example, `airquality[order(airquality$Month),]` and `airquality[order(airquality$Day),]` order that data frame by Month and Day respectively. Multiple argumets in `order` are allowed.
 
 ### Data visualization
@@ -43,11 +42,11 @@ Decent explanation and demonstration of mechanisms of `ggplot2::position_dodge`.
 Using `grid` to place the plots and the legends in an arbitrary layout. I also modified this function to allow shared axes titles and to specify only ncol or nrow. The modified scripts is in the master branch.
 
 ### Functions for general R programming
-* __All arguments after an ellipsis must have default values__<br>
+* _All arguments after an ellipsis must have default values_<br>
 For example, `paste (..., sep = " ", collapse = NULL)` in its documentation.
-* __Generating messages for function users__<br>
+* _Generating messages for function users_<br>
 `message` is used for generating a diagnostic message, while `warning` and `stop` are for generating warnings and fetal errors respectively. `stopifnot`, on the other hand, is "If any of the expressions in `...` are not all TRUE, `stop` is called, producing an error message indicating the first of the elements of `...` which were not true."
-* __Using functions (once) without loading the package__<br>
+* _Using functions (once) without loading the package_<br>
 Specify the package and function separated by `::`. For example, calling `reshape2::melt` is equivalent to `library(reshape2)` or `require(reshape2)` before `melt`.
 
 ### Useful packages (ordered alphabetically)
@@ -74,6 +73,6 @@ A powerful package to build interactive plots. Its `plot_ly` function creates va
 * <a href="https://shiny.rstudio.com/">shiny</a><br>
 Building interactive interface and present data to others even they don't know R. Its tutorial is very worth reading.
 
-Last update: April 30, 2017
+Last update: May 3, 2017
 
 *Copyrights &copy; 2017 by Yu-Zhen Tu. All rights reserved.*
