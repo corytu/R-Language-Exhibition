@@ -50,29 +50,31 @@ For example, `paste (..., sep = " ", collapse = NULL)` in its documentation.
 Specify the package and function separated by `::`. For example, calling `reshape2::melt` is equivalent to `library(reshape2)` or `require(reshape2)` before `melt`.
 
 ### Useful packages (ordered alphabetically)
-* <a href="https://cran.r-project.org/package=car">car</a><br>
+* [car](https://cran.r-project.org/package=car)<br>
 Short for "Companion to Applied Regression". Two of the useful functions are `Anova` and `Manova`, which can calculate type-II or type-III ANOVA and MANOVA respectively.
-* <a href="https://cran.r-project.org/web/packages/cowplot/vignettes/introduction.html">cowplot</a><br>
+* [cowplot](https://cran.r-project.org/web/packages/cowplot/vignettes/introduction.html)<br>
 Merging multiple ggplots and labeling them respectively in one graph.
 * [dplyr](https://cran.r-project.org/web/packages/dplyr/vignettes/introduction.html)<br>
 Some other ways to manipulate or cleanse data.
-* <a href="https://cran.r-project.org/package=e1071">e1071</a><br>
+* [e1071](https://cran.r-project.org/package=e1071)<br>
 LIBSVM package for R.
-* <a href="http://ggplot2.org">ggplot2</a><br>
+* [ggplot2](http://ggplot2.org)<br>
 A popular plotting system in R.
-* <a href="https://cran.r-project.org/package=gridExtra">gridExtra</a><br>
+* [gridExtra](https://cran.r-project.org/package=gridExtra)<br>
 "Miscellaneous Functions for 'Grid' Graphics." A tutorial can be found <a href="http://www.sthda.com/english/wiki/ggplot2-easy-way-to-mix-multiple-graphs-on-the-same-page-r-software-and-data-visualization">here</a>.
 * <a href="https://cran.r-project.org/web/packages/magrittr/vignettes/magrittr.html">magrittr</a><br>
 The "pipe-like" operator `%>%` allows people to transmit a value or object to an expression or function call.
-* <a href="https://cran.r-project.org/package=MCMCglmm">MCMCglmm</a><br>
+* [MCMCglmm](https://cran.r-project.org/package=MCMCglmm)<br>
 A package for fitting Bayesian mixed models in R. More introduction and tutorial <a href="https://github.com/tmalsburg/MCMCglmm-intro">here</a>.
-* <a href="https://plot.ly/r/">plotly</a><br>
+* [plotly](https://plot.ly/r/)<br>
 A powerful package to build interactive plots. Its `plot_ly` function creates various types of plots, and `ggplotly` turns most of `ggplot2` objects interactive.
-* <a href="https://cran.r-project.org/package=reshape2">reshape2</a><br>
+* [rattle](http://rattle.togaware.com)<br>
+Wonderful GUI for machine learning analyses. The author emphasizes its capability of creating logs when users click the GUI, and exporting them as a shortcut for further argument tuning. Programming is still encouraged.
+* [reshape2](https://cran.r-project.org/package=reshape2)<br>
 `melt` the data into a long-format or `cast` it into a wide-format. An example is provided <a href="https://corytu.github.io/R_Language_Playground/reshape2_melt.html">here</a>.
-* <a href="https://shiny.rstudio.com/">shiny</a><br>
+* [shiny](https://shiny.rstudio.com/)<br>
 Building interactive interface and present data to others even they don't know R. Its tutorial is very worth reading.
 
-Last update: May 3, 2017
+Last update: May 5, 2017
 
 *Copyrights &copy; 2017 by Yu-Zhen Tu. All rights reserved.*
