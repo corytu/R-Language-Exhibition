@@ -76,5 +76,3 @@ Wonderful GUI for machine learning analyses. The author emphasizes its capabilit
 Building interactive interface and present data to others even they don't know R. Its tutorial is very worth reading.
 
 Last update: May 5, 2017
-
-*Copyrights &copy; 2017 by Yu-Zhen Tu. All rights reserved.*
