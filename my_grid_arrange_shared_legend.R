@@ -13,9 +13,18 @@
 # position: Character string. Final position of the common legend. It can be either "right" or "bottom".
 # common.x, common.y: Logical values. Whether or not the x-axis or y-axis is common across the ggplot objects?
 
-if (!library(ggplot2, logical.return = TRUE)) {install.packages("ggplot2", repos = "https://cloud.r-project.org/")}
-if (!library(gridExtra, logical.return = TRUE)) {install.packages("gridExtra", repos = "https://cloud.r-project.org/")}
-if (!library(grid, logical.return = TRUE)) {install.packages("grid", repos = "https://cloud.r-project.org/")}
+if (!suppressWarnings(library(ggplot2, logical.return = TRUE))) {
+  install.packages("ggplot2", repos = "https://cloud.r-project.org/")
+  library(ggplot2)
+}
+if (!suppressWarnings(library(gridExtra, logical.return = TRUE))) {
+  install.packages("gridExtra", repos = "https://cloud.r-project.org/")
+  library(gridExtra)
+}
+if (!suppressWarnings(library(grid, logical.return = TRUE))) {
+  install.packages("grid", repos = "https://cloud.r-project.org/")
+  library(grid)
+}
 
 my_grid_arrange_shared_legend <- function(..., ncol = NULL, nrow = NULL, position = c("right", "bottom"),
                                           common.x = FALSE, common.y = FALSE) {
