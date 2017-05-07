@@ -2,7 +2,7 @@
 1. gh-pages (public html pages, see introduction below)
 2. master (code files and documents, ordered alphabetically below)
     * cachematrix.R: Create and cache a matrix. Find its inverse matrix if it exists.
-    * my_grid_arrange_shared_legend.R: Arrange grobs with a shared legend. Shared axes are also allowed.
+    * __[my_grid_arrange_shared_legend.R](https://github.com/corytu/R-Language-Playground/blob/master/my_grid_arrange_shared_legend.R)__: Arrange grobs with a shared legend. Shared axes are also allowed. Detailed discription is in the .R file. The only needed preparation is downloading and `source` it in R. Required packages will be installed if they cannot be found in library paths.
     * R_Tutorial.pdf: A tutorial I gave to BLP in Oct 2016.
     * Taiwan_tourism_economics.R: Create a motion chart by `googleVis` package, showing some economic indexes and tourist numbers in Taiwan in recent years.
 
@@ -74,4 +74,4 @@ Wonderful GUI for machine learning analyses. The author emphasizes its capabilit
 * [shiny](https://shiny.rstudio.com/)<br>
 Building interactive interface and present data to others even they don't know R. Its tutorial is very worth reading.
 
-Last update: May 7, 2017
+Last update: May 8, 2017
