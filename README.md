@@ -5,7 +5,6 @@
     * my_grid_arrange_shared_legend.R: Arrange grobs with a shared legend. Shared axes are also allowed.
     * R_Tutorial.pdf: A tutorial I gave to BLP in Oct 2016.
     * Taiwan_tourism_economics.R: Create a motion chart by `googleVis` package, showing some economic indexes and tourist numbers in Taiwan in recent years.
-    * ui.R, server.R: A Shiny application showing the proportions of older adults across districts in Taiwan.
 
 ## Hello World!
 **My name is Yu-Zhen, and I am from Taiwan.**
@@ -14,7 +13,7 @@
 * [Relationships between Visitor Numbers and Taiwan Economics](https://corytu.github.io/R_Language_Playground/Relationships_between_Visitor_Numbers_and_Taiwan_Economics.html) (Mar 2017)<br>
 The webpage implements `googleVis` package of R and demonstrates the relationships between visitor numbers and multiple economics indexes in Taiwan. Taiwan's economic system seems to have been strongly affected by China. We need to find our way to guarantee our economy growth without China's support if we want independence of our country.
 * __[Old Population Proportions in Districts in Taiwan](https://corytu.shinyapps.io/old_populations_dist/) (Mar 2017)<br>__
-This Shiny app illustrates the percentages of old population in every district in Taiwan. It is widely referred in local health authorities in Taiwan, helping the promotion of primary health and creating an elder-friendly society. Last updated in March, 2017. [This webpage](https://corytu.github.io/R_Language_Playground/Old_Population_Proportions.html) provides details of how it works in English.
+This Shiny app illustrates the percentages of old population in every district in Taiwan. It is widely referred in local health authorities in Taiwan, helping the promotion of primary health and creating an elder-friendly society. Last updated in March, 2017. The source codes are in another repository of mine: [Old_Population_Proportions](https://github.com/corytu/Old_Population_Proportions).
 * [Air quality in New York in 1973](https://corytu.shinyapps.io/airquality/) (Feb 2017)<br>
 My first Shiny application uses "airquality" data frame in R and plots the relationship between selected variables. Details are available <a href="https://corytu.github.io/R_Language_Playground/Air_Quality_in_New_York_in_1973.html">here</a>.
 * [Taiwan National Parks](https://corytu.github.io/R_Language_Playground/Taiwan_National_Parks.html) (Feb 2017)<br>
@@ -75,4 +74,4 @@ Wonderful GUI for machine learning analyses. The author emphasizes its capabilit
 * [shiny](https://shiny.rstudio.com/)<br>
 Building interactive interface and present data to others even they don't know R. Its tutorial is very worth reading.
 
-Last update: May 5, 2017
+Last update: May 7, 2017
