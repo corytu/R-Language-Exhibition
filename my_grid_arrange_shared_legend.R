@@ -12,6 +12,9 @@
 # ncol, nrow: Number of columns and rows of the combined plot. If one of them is unspecified, it will be automatically carried with number of "ggplot objects devided by specified ncol or nrow".
 # position: Character string. Final position of the common legend. It can be either "right" or "bottom".
 # common.x, common.y: Logical values. Whether or not the x-axis or y-axis is common across the ggplot objects?
+# --
+# Dependencies:
+# ggplot2, gridExtra, grid. These required packages will be installed automatically if they can't be found in library paths.
 
 if (!suppressWarnings(library(ggplot2, logical.return = TRUE))) {
   install.packages("ggplot2", repos = "https://cloud.r-project.org/")
