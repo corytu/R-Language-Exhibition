@@ -3,10 +3,10 @@
 
 # Project Demonstration
 ## Personal projects
-* [Relationships between Visitor Numbers and Taiwan Economics](https://corytu.github.io/R-Language-Exhibition/Relationships_between_Visitor_Numbers_and_Taiwan_Economics.html) (Mar 2017)<br>
+* [Relationships between Visitor Numbers and Taiwan Economics (Flash Player required)](https://corytu.github.io/R-Language-Exhibition/Relationships_between_Visitor_Numbers_and_Taiwan_Economics.html) (Mar 2017)<br>
 The webpage implements `googleVis` package of R and demonstrates the relationships between visitor numbers and multiple economics indexes in Taiwan. Taiwan's economic system seems to have been strongly affected by China. We need to find our way to guarantee our economy growth without China's support if we want independence of our country.
 * __[Old Population Proportions in Districts in Taiwan](https://corytu.shinyapps.io/old_populations_dist/) (Mar 2017)<br>__
-This Shiny app illustrates the percentages of old population in every district in Taiwan. It is widely referred in local health authorities in Taiwan, helping the promotion of primary health and creating an elder-friendly society. Last updated in March, 2017. The source codes are in another repository of mine: [Old-Population-Proportions](https://github.com/corytu/Old_Population_Proportions).
+This Shiny app illustrates the percentages of old population in every district in Taiwan. It is widely referred in local health authorities in Taiwan, helping the promotion of primary health and creating an elder-friendly society. Last updated in March, 2017. The source codes are in another repository of mine: [Old-Population-Proportions](https://github.com/corytu/Old-Population-Proportions).
 ## Assignments of [Developing Data Products](https://www.coursera.org/learn/data-products/home/info) on Coursera
 * [Air quality in New York in 1973](https://corytu.shinyapps.io/airquality/) (Feb 2017)<br>
 My first Shiny application uses "airquality" data frame in R and plots the relationship between selected variables. Details are available <a href="https://corytu.github.io/R_Language_Playground/Air_Quality_in_New_York_in_1973.html">here</a>.
