@@ -1,5 +1,5 @@
 # Branches
-1. gh-pages (public html pages, see introduction below)
+1. gh-pages (public html pages, see Project Demonstration below)
 2. master (code files and documents, ordered alphabetically below)
     * cachematrix.R: Create and cache a matrix. Find its inverse matrix if it exists.
     * __[my_grid_arrange_shared_legend.R](https://github.com/corytu/R-Language-Playground/blob/master/my_grid_arrange_shared_legend.R)__: Arrange grobs with a shared legend. Shared axes are also allowed. Detailed discription is in the .R file. The only needed preparation is downloading and `source` it in R. Required packages will be installed if they cannot be found in library paths.
@@ -29,4 +29,4 @@ After a brief introduction of R plotting systems, a guidance for creating scatte
 * <a href="https://github.com/corytu/R_Language_Playground/blob/master/R_Tutorial_20161012_BLP.pdf">R Programming tutorial</a> (Oct 2016)<br>
 An R tutorial which covers the history and overview of R, the characteristics of various R objects, and vectorized operations. It also contains the functions people use to input/output the data or scripts. The control structures and function writing in R are introduced in the end.
 
-Last update: May 16, 2017
+Last update: May 21, 2017
