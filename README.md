@@ -24,7 +24,6 @@ It is a rather simple presentation with plotly tool. The data are from R built-i
 # Code Files
 * cachematrix.R: Create and cache a matrix. Find its inverse matrix if it exists.
 * __[my_grid_arrange_shared_legend.R](https://github.com/corytu/R-Language-Exhibition/blob/master/my_grid_arrange_shared_legend.R)__: Arrange grobs with a shared legend. Shared axes are also allowed. Detailed discription is in the .R file. The only needed preparation is downloading and `source` it in R. Required packages will be installed if they cannot be found in library paths.
-* R_Tutorial.pdf: A tutorial I gave to BLP in Oct 2016.
 * Taiwan_tourism_economics.R: Create a motion chart by `googleVis` package, showing some economic indexes and tourist numbers in Taiwan in recent years.
 
 # Given Tutorial Slides
