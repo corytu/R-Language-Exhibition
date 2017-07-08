@@ -22,9 +22,9 @@ It shows all nine national parks in Taiwan. The hyperlinks to each national park
 It is a rather simple presentation with plotly tool. The data are from R built-in "mtcars" dataset.
 
 # Code Files
-* cachematrix.R: Create and cache a matrix. Find its inverse matrix if it exists.
-* __[my_grid_arrange_shared_legend.R](https://github.com/corytu/R-Language-Exhibition/blob/master/my_grid_arrange_shared_legend.R)__: Arrange grobs with a shared legend. Shared axes are also allowed. Detailed discription is in the .R file. The only needed preparation is downloading and `source` it in R. Required packages will be installed if they cannot be found in library paths.
-* Taiwan_tourism_economics.R: Create a motion chart by `googleVis` package, showing some economic indexes and tourist numbers in Taiwan in recent years.
+* [cachematrix.R](https://github.com/corytu/R-Language-Exhibition/blob/master/cachematrix.R): Create and cache a matrix. Find its inverse matrix if it exists.
+* __[my-grid-arrange-shared-legend.R](https://github.com/corytu/R-Language-Exhibition/blob/master/my-grid-arrange-shared-legend.R)__: Arrange grobs with a shared legend. Shared axes are also allowed. Detailed discription is in the .R file. The only needed preparation is downloading and `source` it in R. Required packages will be installed if they cannot be found in library paths.
+* [Taiwan-tourism-economics.R](https://github.com/corytu/R-Language-Exhibition/blob/master/Taiwan-tourism-economics.R): Create a motion chart by `googleVis` package, showing some economic indexes and tourist numbers in Taiwan in recent years.
 
 # Given Tutorial Slides
 * <a href="https://corytu.github.io/R-Language-Exhibition/Pages%20%26%20Docs/Plotting_with_R_ggplot2.html">Plotting with R: ggplot2</a> (Mar 2017)<br>
