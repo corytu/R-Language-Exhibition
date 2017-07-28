@@ -1,0 +1,11 @@
+"num","age","sex","height","weight","waist","MMSEpass"
+1,"young","female",173.1,65780,28,TRUE
+2,"young","male",167.5,60928,29,TRUE
+3,"young","male",159.2,61441,29,TRUE
+4,"young","male",148.1,62185,29,TRUE
+5,"old","female",165.9,64078,26,FALSE
+6,"young","female",157.7,71248,29,TRUE
+7,"young","male",163.6,51775,87,TRUE
+8,"young","male",164.4,61236,80,TRUE
+9,"old","female",159.7,49171,70,TRUE
+10,"old","female",160.3,77006,65,TRUE
