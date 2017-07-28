@@ -27,9 +27,11 @@ It is a rather simple presentation with plotly tool. The data are from R built-i
 * [Taiwan-tourism-economics.R](https://github.com/corytu/R-Language-Exhibition/blob/master/Taiwan-tourism-economics.R): Create a motion chart by `googleVis` package, showing some economic indexes and tourist numbers in Taiwan in recent years.
 
 # Given Tutorial Slides
+* [R tutorial](https://corytu.github.io/R-Language-Exhibition/Docs/R-Tutorial.html) (Jul 2017)<br>
+New tutorial slides created with R markdown. Additional practices are provided, compared with the tutorial last year.
 * <a href="https://corytu.github.io/R-Language-Exhibition/Docs/Plotting_with_R_ggplot2.html">Plotting with R: ggplot2</a> (Mar 2017)<br>
 After a brief introduction of R plotting systems, a guidance for creating scatter plots and bar plots including legends and facets for conditions is provided. It also covers methods to add error bars and regression lines. Practices come along so that people can apply their newly learned skills. Slides are done with R markdown.
 * <a href="https://github.com/corytu/R-Language-Exhibition/blob/master/Docs/R_Tutorial_20161012_BLP.pdf">R Programming tutorial</a> (Oct 2016)<br>
 An R tutorial which covers the history and overview of R, the characteristics of various R objects, and vectorized operations. It also contains the functions people use to input/output the data or scripts. The control structures and function writing in R are introduced in the end.
 
-Last update: July 27, 2017
+Last update: July 28, 2017
