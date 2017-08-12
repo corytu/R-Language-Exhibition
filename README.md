@@ -40,4 +40,4 @@ After a brief introduction of R plotting systems, a guidance for creating scatte
 * <a href="https://github.com/corytu/R-Language-Exhibition/blob/master/Docs/R_Tutorial_20161012_BLP.pdf">R Programming tutorial</a> (Oct 2016)<br>
 An R tutorial which covers the history and overview of R, the characteristics of various R objects, and vectorized operations. It also contains the functions people use to input/output the data or scripts. The control structures and function writing in R are introduced in the end.
 
-Last update: July 28, 2017
+Last update: August 13, 2017
