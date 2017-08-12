@@ -4,6 +4,12 @@
 # Project Demonstration
 
 ## Personal projects
+* __[Currency Dashboard of NTD](https://corytu.shinyapps.io/currency-dashboard/) (Jul 2017)<br>__
+    1. Present the latest currency information with interactive plot and table
+    2. Present the latest interest information with interactive plot
+    3. Compare the exchanges prices between that of today and that of last week
+    4. Calculate the return of investment if additional information provided
+    * [Currency-Dashboard](https://github.com/corytu/Currency-Dashboard) is my GitHub repository sharing the source code.
 * [Relationships between Visitor Numbers and Taiwan Economics (Flash Player required)](https://corytu.github.io/R-Language-Exhibition/Docs/Relationships_between_Visitor_Numbers_and_Taiwan_Economics.html) (Mar 2017)<br>
 The webpage implements `googleVis` package of R and demonstrates the relationships between visitor numbers and multiple economics indexes in Taiwan. Taiwan's economic system seems to have been strongly affected by China. We need to find our way to guarantee our economy growth without China's support if we want independence of our country.
 * __[Old Population Proportions in Districts in Taiwan](https://corytu.shinyapps.io/old_populations_dist/) (Mar 2017)<br>__
