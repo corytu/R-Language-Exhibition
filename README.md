@@ -27,11 +27,6 @@ It shows all nine national parks in Taiwan. The hyperlinks to each national park
 * [Playing mtcars dataset](https://corytu.github.io/R-Language-Exhibition/Docs/play_mtcars_dataset.html) (Feb 2017)<br>
 It is a rather simple presentation with plotly tool. The data are from R built-in "mtcars" dataset.
 
-# Code Files
-* [cachematrix.R](https://github.com/corytu/R-Language-Exhibition/blob/master/cachematrix.R): Create and cache a matrix. Find its inverse matrix if it exists.
-* __[my-grid-arrange-shared-legend.R](https://github.com/corytu/R-Language-Exhibition/blob/master/my-grid-arrange-shared-legend.R)__: Arrange grobs with a shared legend. Shared axes are also allowed. Detailed discription is in the .R file. The only needed preparation is downloading and `source` it in R. Required packages will be installed if they cannot be found in library paths.
-* [Taiwan-tourism-economics.R](https://github.com/corytu/R-Language-Exhibition/blob/master/Taiwan-tourism-economics.R): Create a motion chart by `googleVis` package, showing some economic indexes and tourist numbers in Taiwan in recent years.
-
 # Given Tutorial Slides
 * [R tutorial](https://corytu.github.io/R-Language-Exhibition/Docs/R-Tutorial.html) (Jul 2017)<br>
 New tutorial slides created with R markdown. Additional practices are provided, compared with the tutorial last year.
@@ -39,5 +34,10 @@ New tutorial slides created with R markdown. Additional practices are provided, 
 After a brief introduction of R plotting systems, a guidance for creating scatter plots and bar plots including legends and facets for conditions is provided. It also covers methods to add error bars and regression lines. Practices come along so that people can apply their newly learned skills. Slides are done with R markdown.
 * <a href="https://github.com/corytu/R-Language-Exhibition/blob/master/Docs/R_Tutorial_20161012_BLP.pdf">R Programming tutorial</a> (Oct 2016)<br>
 An R tutorial which covers the history and overview of R, the characteristics of various R objects, and vectorized operations. It also contains the functions people use to input/output the data or scripts. The control structures and function writing in R are introduced in the end.
+
+# Other Code Files
+* [cachematrix.R](https://github.com/corytu/R-Language-Exhibition/blob/master/cachematrix.R): Create and cache a matrix. Find its inverse matrix if it exists.
+* __[my-grid-arrange-shared-legend.R](https://github.com/corytu/R-Language-Exhibition/blob/master/my-grid-arrange-shared-legend.R)__: Arrange grobs with a shared legend. Shared axes are also allowed. Detailed discription is in the .R file. The only needed preparation is downloading and `source` it in R. Required packages will be installed if they cannot be found in library paths.
+* [Taiwan-tourism-economics.R](https://github.com/corytu/R-Language-Exhibition/blob/master/Taiwan-tourism-economics.R): Create a motion chart by `googleVis` package, showing some economic indexes and tourist numbers in Taiwan in recent years.
 
 Last update: August 13, 2017
