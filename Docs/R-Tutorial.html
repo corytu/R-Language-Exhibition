@@ -93,7 +93,7 @@
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
       <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
       <p data-config-presenter><!-- populated from slide_config.json --></p>
-            <p style="margin-top: 6px; margin-left: -2px;">2017/7/28</p>
+            <p style="margin-top: 6px; margin-left: -2px;">2017/8/15</p>
           </hgroup>
   </slide>
 
@@ -221,6 +221,19 @@ my_list2 &lt;- list(first = 1:3, second = letters, third = TRUE)
 # What&#39;s the difference between my_list and my_list2?</pre></li>
 </ul>
 
+</article></slide><slide class=''><hgroup><h2>Practice-1</h2></hgroup><article  id="practice-1">
+
+<p>Create a list like this:</p>
+
+<pre >$one
+[1] &quot;a&quot; &quot;b&quot; &quot;c&quot; &quot;d&quot;
+
+$two
+[1] 76 77 78 79 80
+
+$three
+[1]  TRUE FALSE  TRUE</pre>
+
 </article></slide><slide class=''><hgroup><h2>Matrix</h2></hgroup><article  id="matrix">
 
 <ul>
@@ -252,7 +265,7 @@ my_list2 &lt;- list(first = 1:3, second = letters, third = TRUE)
 
 <pre >[1] high high low  mid  low 
 Levels: low mid high</pre></li>
-<li><a href='https://corytu.github.io/Coursera-R-Mentoring/factor-levels-and-labels.html' title=''>Further reading</a></li>
+<li><a href='https://corytu.github.io/Coursera-R-Mentoring/factor-levels-and-labels.html' title=''>Further reading</a> about factor levels</li>
 <li>Factors are very useful for analyzing categorical variables.</li>
 <li><p>Pay extra attention when coercing factors into numbers.</p></li>
 </ul>
@@ -265,9 +278,9 @@ Levels: low mid high</pre></li>
 <li><code>cbind</code> and <code>rbind</code> are also effective for data frames.</li>
 </ul>
 
-</article></slide><slide class=''><hgroup><h2>Practice</h2></hgroup><article  id="practice">
+</article></slide><slide class=''><hgroup><h2>Practice-2</h2></hgroup><article  id="practice-2">
 
-<p>Try to make the following data frame.<br><em>Hint: It&#39;s like creating a list but with the same length of vectors.</em></p>
+<p>Try to make the following data frame. Save the object as &quot;practice.frame&quot;.<br><em>Hint: It&#39;s like creating a list but with the same length of vectors.</em></p>
 
 <pre >  num   age RT MMSEpass
 1   1 young 12     TRUE
@@ -305,9 +318,9 @@ Levels: low mid high</pre></li>
 <li><code>setwd</code> sets another specific path as working directory.</li>
 </ul>
 
-</article></slide><slide class=''><hgroup><h2>Practice</h2></hgroup><article  id="practice-1">
+</article></slide><slide class=''><hgroup><h2>Practice</h2></hgroup><article  id="practice">
 
-<p>Let’s create a folder and set it as the working directory for this tutorial! Download the following two files and put them in that set directory.<br><em>Please avoid Chinese characters and spaces in your path.</em></p>
+<p>Let’s create a folder and set it as the working directory for this tutorial! Download the following two files and put them in that directory.<br><em>Please avoid Chinese characters and spaces in your path.</em></p>
 
 <ul>
 <li><a href='https://github.com/corytu/R-Language-Exhibition/blob/master/Docs/r-tutorial-demo.csv' title=''>r-tutorial-demo.csv</a></li>
@@ -405,7 +418,7 @@ load(&quot;tutorial.RData&quot;)</pre></li>
  $ sex   : Factor w/ 2 levels &quot;female&quot;,&quot;male&quot;: 1 2 2 2 1 1 2 2 1 1
  $ height: num  173 168 159 148 166 ...</pre>
 
-</article></slide><slide class=''><hgroup><h2>Practice</h2></hgroup><article  id="practice-2">
+</article></slide><slide class=''><hgroup><h2>Practice</h2></hgroup><article  id="practice-3">
 
 <p>Take a look at the data frame you created earlier.</p>
 
@@ -464,13 +477,13 @@ n &lt;- matrix(1:4, 2, 2)
 # m * n = ?
 # m %*% n = ?</pre>
 
-</article></slide><slide class=''><hgroup><h2>Practice</h2></hgroup><article  id="practice-3">
+</article></slide><slide class=''><hgroup><h2>Practice</h2></hgroup><article  id="practice-4">
 
 <ol>
 <li>Read the .csv file, &quot;r-tutorial-practice.csv&quot;, into your R session.</li>
 <li>Look at the input data frame. Watch its components, structure, etc.</li>
 <li>Revise the units of height and weight. (Height: from cm to m; Weight: from g to kg)</li>
-<li>Calculate the BMIs of all the 10 participants and assign them as a new column of your data frame.</li>
+<li>Calculate the BMIs of all the 10 participants and assign them as a new column called BMI of your data frame.</li>
 <li>Report the BMIs of those who have MMSE passed.</li>
 <li>Export the revised data frame as a new csv file called &quot;my-success.csv&quot; to your working directory.</li>
 </ol>
@@ -549,9 +562,13 @@ while (i &lt; 4) {
 [1] 4</pre></li>
 </ul>
 
-</article></slide><slide class=''><hgroup><h2>Practice</h2></hgroup><article  id="practice-4">
+</article></slide><slide class=''><hgroup><h2>Practice</h2></hgroup><article  id="practice-5">
 
-<p>Revise the unreasonable waist (&gt; 35 inches) in your practiced data frame from centimeters to inches (1 inch = 2.5 cm).</p>
+<ol>
+<li>Revise the unreasonable waist (&gt; 35 inches) in your practiced data frame from centimeters to inches (1 inch = 2.5 cm).</li>
+<li>The participant with missing sex information is a female. Update your data frame accordingly.</li>
+<li>Export and overwrite &quot;my-success.csv&quot;.</li>
+</ol>
 
 </article></slide><slide class='segue dark nobackground level1'><hgroup class = 'auto-fadein'><h2>Advanced: Writing Functions</h2></hgroup><article  id="advanced-writing-functions">
 
@@ -564,7 +581,7 @@ add(2, 3)</pre>
 
 <pre >[1] 5</pre>
 
-</article></slide><slide class=''><hgroup><h2>Practice</h2></hgroup><article  id="practice-5">
+</article></slide><slide class=''><hgroup><h2>Practice</h2></hgroup><article  id="practice-6">
 
 <p>Try to create a function, which can subset and print out elements greater than a specified number from a numeric vector.</p>
 
