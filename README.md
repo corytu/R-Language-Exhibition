@@ -10,8 +10,8 @@ Hello! My name is Yu-Zhen Tu, and I am from Taiwan. This is my webpage built to 
     3. Compare the exchanges prices between that of today and that of last week
     4. Calculate the return of investment if additional information provided
     5. [Currency-Dashboard](https://github.com/corytu/Currency-Dashboard) is my GitHub repository sharing the source code.
-* __[Old Population Proportions in Districts in Taiwan](https://corytu.shinyapps.io/old_populations_dist/) (Mar 2017)<br>__
-This Shiny app illustrates the percentages of old population in every district in Taiwan. It is widely referred in local health authorities in Taiwan, helping the promotion of primary health and creating an elder-friendly society. Last updated in August, 2017. The source codes are in another repository of mine: [Old-Population-Proportions](https://github.com/corytu/Old-Population-Proportions).
+* __[Old Population Proportions in Districts in Taiwan](https://corytu.shinyapps.io/old-population-proportions/) (Mar 2017)<br>__
+This Shiny app illustrates the percentages of old population in every district in Taiwan. It is widely referred in local health authorities in Taiwan, helping the promotion of primary health and creating an elder-friendly society. Last updated in Febuary 2018. The source codes are in another repository of mine: [Old-Population-Proportions](https://github.com/corytu/Old-Population-Proportions).
 * [Relationships between Visitor Numbers and Taiwan Economics (Flash Player required)](https://corytu.github.io/R-Language-Exhibition/Docs/Relationships_between_Visitor_Numbers_and_Taiwan_Economics.html) (Mar 2017)<br>
 The webpage implements `googleVis` package of R and demonstrates the relationships between visitor numbers and multiple economics indexes in Taiwan. Taiwan's economic system seems to have been strongly affected by China. We need to find our way to guarantee our economy growth without China's support if we want independence of our country.
 
