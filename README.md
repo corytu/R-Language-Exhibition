@@ -1,4 +1,4 @@
-# R-Language-Exhibition
+# R Language Exhibition
 Hello! My name is Yu-Zhen Tu, and I am from Taiwan. This is my webpage built to demonstrate my works done with R.
 
 # Project Demonstration
