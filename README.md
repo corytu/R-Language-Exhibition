@@ -5,12 +5,12 @@ Hello! My name is Yu-Zhen Tu, and I am from Taiwan. This is my webpage built to 
 
 ## Personal projects
 * __[Currency Dashboard of NTD](https://corytu.shinyapps.io/currency-dashboard/) (Jul 2017)<br>__
-    1. Parse from [Bank of Taiwan](http://www.bot.com.tw/Pages/default.aspx) and present
+    * Parse from [Bank of Taiwan](http://www.bot.com.tw/Pages/default.aspx) and present
         1. the latest currency information, and
         2. the latest interest information with interactive plots and tables
-    2. Compare the exchanges prices between that of today and that of last week
-    3. Calculate the return of investment if additional information provided
-    4. [CurrencyDashboard](https://github.com/corytu/CurrencyDashboard) is my GitHub repository sharing the source code.
+    * Compare the exchanges prices between that of today and that of last week
+    * Calculate the return of investment if additional information provided
+    * [CurrencyDashboard](https://github.com/corytu/CurrencyDashboard) is my GitHub repository sharing the source code.
 * __[Old Population Proportions in Districts in Taiwan](https://corytu.shinyapps.io/old-population-proportions/) (Mar 2017)<br>__
 This Shiny app illustrates the percentages of old population in every district in Taiwan. It is widely referred in local health authorities in Taiwan, helping the promotion of primary health and creating an elder-friendly society. Last updated in Febuary 2018. The source codes are in another repository of mine: [OldPopulationProportions](https://github.com/corytu/OldPopulationProportions).
 * [Relationships between Visitor Numbers and Taiwan Economics (Flash Player required)](https://corytu.github.io/RLanguageExhibition/Docs/Relationships_between_Visitor_Numbers_and_Taiwan_Economics.html) (Mar 2017)<br>
@@ -43,4 +43,4 @@ An R tutorial which covers the history and overview of R, the characteristics of
 * __[my-grid-arrange-shared-legend.R](https://github.com/corytu/RLanguageExhibition/blob/master/my-grid-arrange-shared-legend.R)__: Arrange grobs with a shared legend. Shared axes are also allowed. Detailed discription is in the .R file. The only needed preparation is downloading and `source` it in R. Required packages will be installed if they cannot be found in library paths.
 * [Taiwan-tourism-economics.R](https://github.com/corytu/RLanguageExhibition/blob/master/Taiwan-tourism-economics.R): Create a motion chart by `googleVis` package, showing some economic indexes and tourist numbers in Taiwan in recent years.
 
-Last update: March 8, 2018
+Last update: March 17, 2018
