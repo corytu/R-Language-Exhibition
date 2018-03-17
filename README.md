@@ -5,11 +5,12 @@ Hello! My name is Yu-Zhen Tu, and I am from Taiwan. This is my webpage built to 
 
 ## Personal projects
 * __[Currency Dashboard of NTD](https://corytu.shinyapps.io/currency-dashboard/) (Jul 2017)<br>__
-    1. Present the latest currency information with interactive plot and table
-    2. Present the latest interest information with interactive plot
-    3. Compare the exchanges prices between that of today and that of last week
-    4. Calculate the return of investment if additional information provided
-    5. [CurrencyDashboard](https://github.com/corytu/CurrencyDashboard) is my GitHub repository sharing the source code.
+    1. Parse from [Bank of Taiwan](http://www.bot.com.tw/Pages/default.aspx) and present
+        1. the latest currency information, and
+        2. the latest interest information with interactive plots and tables
+    2. Compare the exchanges prices between that of today and that of last week
+    3. Calculate the return of investment if additional information provided
+    4. [CurrencyDashboard](https://github.com/corytu/CurrencyDashboard) is my GitHub repository sharing the source code.
 * __[Old Population Proportions in Districts in Taiwan](https://corytu.shinyapps.io/old-population-proportions/) (Mar 2017)<br>__
 This Shiny app illustrates the percentages of old population in every district in Taiwan. It is widely referred in local health authorities in Taiwan, helping the promotion of primary health and creating an elder-friendly society. Last updated in Febuary 2018. The source codes are in another repository of mine: [OldPopulationProportions](https://github.com/corytu/OldPopulationProportions).
 * [Relationships between Visitor Numbers and Taiwan Economics (Flash Player required)](https://corytu.github.io/RLanguageExhibition/Docs/Relationships_between_Visitor_Numbers_and_Taiwan_Economics.html) (Mar 2017)<br>
