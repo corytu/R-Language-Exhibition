@@ -1,9 +1,9 @@
 # R Language Presentations
-Hello! My name is Yu-Zhen Tu, and I am from Taiwan. This is my webpage built to demonstrate my works done with R.
+Hello! My name is Yu-Zhen Tu, and I am from Taiwan. This repository is built to demonstrate my works done in R language.
 
 # Project Demonstration
 
-## Personal projects
+## Personal side projects
 * __[Currency Dashboard of NTD](https://corytu.shinyapps.io/currency-dashboard/) (Jul 2017)<br>__
     * Parse from [Bank of Taiwan](http://www.bot.com.tw/Pages/default.aspx) and present
         1. the latest currency information, and
