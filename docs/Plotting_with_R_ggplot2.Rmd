@@ -1,0 +1,224 @@
+---
+title: 'Plotting with R: ggplot2'
+author: "Yu-Zhen Tu <br> Research Assistant at NTU, GIBMS, Brain and Mind Laboratory <br> Community Mentor of JHU \"R Programming\" on Coursera <br> <a href=\"mailto:corytu@ntu.edu.tw\">corytu@ntu.edu.tw</a>"
+date: "March 17, 2017"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, comment = "", fig.align = "center")
+```
+
+# General Concepts
+
+## Plotting systems in R (incompatible)
+* base
+    + Easy and straightforward (in my opinion)
+    + Start with plot (or similar) functions
+    + Use annotation functions to add elements or modify
+    + Can't go back once the plot is created
+* lattice
+    + Useful for conditioning types of plots
+    + Object oriented
+    + Plots are created with one single function call
+    + Intense preparation
+* __ggplot2__
+    + Combine the advatages of both
+
+## Devices in R
+* Screen
+* Vector format files (e.g. pdf, svg)
+* Bitmap format files (e.g. png, jpeg, tiff)
+
+## Grammar of Graphics
+* Mapping (creating a blank "map")
+* Aesthetic (e.g. color, size)
+* Geometric (e.g. points, lines, bars)
+
+## Check R and ggplot2 versions
+```{r, eval = FALSE}
+version
+# "version.string" >= 3.1.0
+packageVersion("ggplot2")
+# >= 2.2.0
+```
+* If your R version < 3.1.0, you may update your R on https://cloud.r-project.org.
+* If your ggplot2 version < 2.2.0 or doesn't exist, please update or install your ggplot2 with the instruction in the next slide.
+
+## Install and load ggplot2
+```{r, eval = FALSE}
+install.packages("ggplot2", repos = "https://cloud.r-project.org")
+# "repos" argument is optional
+```{r}
+library(ggplot2)
+```
+
+# Scatter Plot <br> (iris & mtcars datasets)
+
+## The structure of iris
+```{r}
+str(iris)
+```
+
+***
+```{r}
+g <- ggplot(aes(x = Petal.Length, y = Petal.Width), data = iris)
+g <- g + geom_point(aes(color = Species)) +
+  geom_smooth(method = "lm", color = "black")
+g + labs(list(x = "Length of Petal", y = "Width of Petal",
+              title = "My First Scatter Plot with ggplot2"))
+```
+
+## Save the plot
+```{r, eval = FALSE}
+ggsave("my_first_plot.png", width = 7, height = 7, dpi = 900)
+# The file will be saved in your working directory unless specified
+# 'plot = last_plot()' by default
+```
+
+## The structure of mtcars
+```{r}
+str(mtcars)
+```
+
+## It's your turn!
+```{r, echo = FALSE}
+g <- ggplot(aes(x = hp, y = mpg), data = mtcars)
+g <- g + geom_point(aes(color = as.factor(cyl))) +
+  geom_smooth(method = "lm", color = "black")
+g + labs(list(x = "Gross Horsepower", y = "Miles/(US) Gallon",
+              color = "Number of Cylinders", title = "Yes I Can!"))
+```
+
+# Bar Plots <br> (airquality dataset)
+
+## The structure of airquality
+```{r}
+str(airquality)
+```
+
+## Data preparation
+```{r}
+se_cal <- function(x) {sd(x, na.rm = TRUE)/sqrt(length(na.omit(x)))}
+myair <- sapply(1:4,
+                function(i){tapply(airquality[,i], airquality$Month,
+                                   mean, na.rm = TRUE)})
+colnames(myair) <- names(airquality)[1:4]
+myair <- as.data.frame(as.table(myair))
+se <- sapply(1:4,
+             function(i){tapply(airquality[,i], airquality$Month,
+                                se_cal)})
+myair$SE <- as.data.frame(as.table(se))$Freq
+names(myair) <- c("Month", "Variable", "Mean", "SE")
+```
+
+***
+```{r}
+g <- ggplot(aes(x = Month, y = Mean), data = myair)
+g <- g + geom_col(aes(fill = Variable), position = "dodge")
+# geom_col() = geom_bar(stat = "identity")
+g + geom_errorbar(aes(ymin = Mean - SE, ymax = Mean + SE, group = Variable),
+                       position = position_dodge(0.9), width = 0.2)
+```
+
+## Data for practice
+```{r}
+myiris <- sapply(1:4,
+                 function(i){tapply(iris[,i], iris$Species,
+                                    mean, na.rm = TRUE)})
+colnames(myiris) <- names(iris)[1:4]
+myiris <- as.data.frame(as.table(myiris))
+se <- sapply(1:4,
+             function(i){tapply(iris[,i], iris$Species, se_cal)})
+myiris$SE <- as.data.frame(as.table(se))$Freq
+names(myiris) <- c("Species", "Variable", "Mean", "SE")
+```
+
+## It's your turn!
+```{r, echo = FALSE}
+g <- ggplot(aes(x = Species, y = Mean), data = myiris)
+g <- g + geom_col(aes(fill = Variable), position = "dodge")
+g <- g + geom_errorbar(aes(ymin = Mean - SE, ymax = Mean + SE,
+                           group = Variable),
+                       position = position_dodge(0.9), width = 0.25)
+g + labs(list(y = "Mean Value (centimeters)",
+              title = "Mean Length and Width versus Species"))
+```
+
+# Creating Facets
+
+## Revisit the first scatter plot <br> (theme_classic)
+```{r, echo = FALSE}
+g <- ggplot(aes(x = Petal.Length, y = Petal.Width), data = iris)
+g <- g + geom_point(aes(color = Species)) +
+  geom_smooth(method = "lm", color = "black")
+g <- g + labs(list(x = "Length of Petal", y = "Width of Petal",
+                   title = "My First Scatter Plot with ggplot2"))
+g <- g + theme_classic()
+g
+```
+
+## Faceting
+```{r}
+g + facet_grid(. ~ Species)
+```
+
+## It's your turn!
+```{r, echo = FALSE}
+# mycars <- mtcars
+# mycars$am <- sapply(1:nrow(mycars),
+#                     function(i){
+#                       ifelse(mycars$am[i] == 0, "Automatic", "Manual")})
+g <- ggplot(aes(x = hp, y = mpg),
+            data = transform(mtcars, am = factor(am, labels = c("Automatic", "Manual"))))
+g <- g + geom_point(aes(color = as.factor(cyl))) +
+  geom_smooth(method = "lm", color = "black")
+g <- g + labs(list(x = "Gross Horsepower", y = "Miles/(US) Gallon",
+                   color = "Number of Cylinders", title = "Yes I Can!"))
+g <- g + theme_classic()
+g + facet_grid(am ~ .)
+```
+
+# Extra Challenge
+
+## Data simulation
+```{r}
+ID <- rep(1:20, each = 20)
+age <- rep(c("Young", "Old"), each = 200)
+sex <- rep(rep(c("Male", "Female"), each = 100), times = 2)
+task <- rep(rep(c("A", "B"), each = 10), times = 20)
+difficulty <- rep(1:10, times = 40)
+simul <- data.frame(ID = ID,
+                    age = factor(age, levels = c("Young", "Old")),
+                    sex = factor(sex, levels = c("Male", "Female")),
+                    task = factor(task, level = c("A", "B")),
+                    difficulty = difficulty)
+set.seed(1022)
+simul$accuracy <- (rnorm(400, 80, 5) - 3*simul$difficulty -
+  10*(as.numeric(simul$age)-1) +
+  2*simul$difficulty*(as.numeric(simul$task)-1))/100
+```
+
+## Come on challengers!
+```{r, echo = FALSE}
+g <- ggplot(aes(x = difficulty, y = accuracy), data = simul)
+g <- g + geom_point(aes(color = age, shape = sex))
+g <- g + geom_smooth(aes(color = age, linetype = sex),
+                     method = "lm")
+g <- g + facet_grid(. ~ task) + theme_classic()
+g + labs(list(x = "Difficulty", y = "Accuracy",
+              color = "Age", shape = "Sex", linetype = "Sex"))
+```
+
+## Resources
+* R in general
+    + <a href="http://datascienceandr.org">R語言翻轉教室</a>
+    + <a href="https://www.coursera.org/specializations/jhu-data-science">Data Science Specialization by JHU on Coursera</a>
+* ggplot2 and coloring
+    + <a href="http://ggplot2.org">ggplot2</a>
+    + <a href="http://colorbrewer2.org">ColorBrewer</a>
+* Asking questions
+    + PTT R_Language, PTT Statistics
+    + <a href="http://stackoverflow.com">Stack Overflow</a>, <a href="http://stats.stackexchange.com">Cross Validated</a>
+
+# Thanks for your attention! <br> Happy plotting!

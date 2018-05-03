@@ -1,0 +1,379 @@
+---
+title: "R Tutorial"
+author: "Yu-Zhen Tu (涂玉臻)<br><a href=\"mailto:corytu@ntu.edu.tw\">corytu@ntu.edu.tw</a><br>Research Assistant at Brain and Mind Laboratory, NTU<br>Community Mentor of JHU “R programming” on Coursera"
+date: "August 15, 2017"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(comment = "", echo = TRUE)
+```
+
+## Outline
+- Overview of R
+- Input and evaluation
+- Atomic classes of objects
+- Data types
+- Help documents
+- Working directory
+- Reading and looking at data
+- Extracting subsets
+- Vectorized operations
+- Control structures
+- Writing functions
+
+# Overview of R
+R as a language and a free software
+
+## R programming language
+- R is a dialect of S.
+- S is a language developed by John Chambers at Bell Labs in 1976.
+- Version 3 of S was rewritten in C language in 1988.
+- R was created by Ross Ihaka and Robert Gentleman at the University of Auckland, New Zealand in 1991.
+- The R Core Group was formed in 1997.
+- R version 1.0.0 was released in 2000.
+- R version 3.4.1 was released on June 30, 2017.
+
+## R is a free software
+- One is granted:
+    1. The freedom to run the program for any purpose.
+    2. The freedom to study how the program works.
+    3. The freedom to share copies of the program.
+    4. The freedom to improve or modify the program, and release the improvements to the public.
+- “We call this free software because the user is free.” ([The Free Software Foundation](https://www.fsf.org))
+
+# Input and Evaluation
+
+## Input
+- Use `<-` as the assignment operator.
+- `=` is also eligible but I recommend `<-`. [Here](https://corytu.github.io/CourseraRMentoring/use-equal-or-arrow.html) is my reason for that.
+- `#` starts comments. Comments won’t be executed.
+
+    ```{r, eval = FALSE}
+    x <- 5
+    name <- "Yu-Zhen"  # keying my name in
+    # Nothing happens.
+    ```
+
+- Incomplete expressions
+
+## Evaluation and printing
+```{r}
+x <- 5    # inputting the value of x
+x         # auto-printing
+print(x)  # explicit printing
+```
+
+# Atomic Classes
+Character, numeric, integer, complex, and logical
+
+## Five basic classes of objects
+- Character: `"Yu-Zhen"`, `letters`, `"Hello world!"`
+- Numeric: `pi`, `123`, `Inf`
+- Integer: `10L`, `123L`
+- Complex: `7 + 3i`
+- Logical: `TRUE` or `FALSE`
+- Use the function `class` to find out which class the object is.
+
+## Missing values
+- `NA` (Not Available) and `NaN` (Not a Number)
+- An `NaN` is an `NA`, but the converse is false.
+- `is.na` and `is.nan` are used to test if objects are `NA` and `NaN`, respectively.
+
+# Data Types
+Vector, list, matrix, factor, and data frame
+
+## Vector
+- Use the function `c` (or `vector`) to create a vector.
+- An integer sequence from m to n can be created by `m:n`.
+- Vectors accept only the same class of elements.
+- Coercion occurs when different classes are input. (logical < integer < numeric < complex < character)
+
+    ```{r}
+    c(TRUE, 1 + 3i, "Yay!")
+    ```
+
+- Explicit coercion can be performed with `as.`* functions.
+
+## List
+- Use `list` to create a list.
+- Lists are similar with vectors but accept different classes of elements.
+
+    ```{r, eval = FALSE}
+    my_list <- list(1:3, letters, TRUE)
+    my_list2 <- list(first = 1:3, second = letters, third = TRUE)
+    # What's the difference between my_list and my_list2?
+    ```
+
+## Practice-1
+Create a list like this:
+
+```{r, echo = FALSE}
+list(one = letters[1:4], two = 76:80, three = c(TRUE, FALSE, TRUE))
+```
+
+## Matrix
+- Matrices are like vectors with two dimensions (row and column).
+- Use `matrix` to create a matrix (column-wise by default).
+
+    ```{r}
+    matrix(1:6, 2, 3)
+    ```
+
+- Bind columns or rows by `cbind` or `rbind` respectively.
+
+    ```{r}
+    rbind(1:4, 5:8)
+    ```
+
+## Factor
+- `factor` creates factors from vectors.
+- The “levels” argument can be specified to assign base level.
+
+    ```{r}
+    factor(c("high", "high", "low", "mid", "low"),
+           levels = c("low", "mid", "high"))
+    ```
+
+- [Further reading](https://corytu.github.io/CourseraRMentoring/factor-levels-and-labels.html) about factor levels
+- Factors are very useful for analyzing categorical variables.
+- Pay extra attention when coercing factors into numbers.
+
+## Data frame
+- `data.frame` can create one data frame.
+- Data frames look like matrices but allow different classes of elements across columns.
+- `cbind` and `rbind` are also effective for data frames.
+
+## Practice-2
+Try to make the following data frame. Save the object as "practice.frame".<br>*Hint: It's like creating a list but with the same length of vectors.*
+
+```{r, echo = FALSE}
+data.frame(num = 1:3,
+           age = factor(c("young", "old", "young"),
+                        levels = c("young", "old")),
+           RT = c(12, 50, 15),
+           MMSEpass = c(TRUE, FALSE, TRUE))
+```
+
+# Help Documents
+
+## Looking up functions
+- `?` or `help` gets the help document of the function.
+    - Some arguments have default values.
+    - Arguments can be passed by matching name or matching position.
+- `??` or `help.search` finds functions with the key word.
+- Getting more help
+    - Google
+    - R_Language on PTT
+    - [Stack Overflow](https://stackoverflow.com)
+
+# Working Directory
+
+## Retrieve and set working directory
+- Files will be saved to and retrieved from the working directory if no path is specified.
+- `getwd` retrieves current working directory path.
+- `setwd` sets another specific path as working directory.
+
+## Practice
+Let’s create a folder and set it as the working directory for this tutorial! Download the following two files and put them in that directory.<br>*Please avoid Chinese characters and spaces in your path.*
+
+- [r-tutorial-demo.csv](https://github.com/corytu/RLanguagePresentations/blob/master/docs/r-tutorial-demo.csv)
+- [r-tutorial-practice.csv](https://github.com/corytu/RLanguagePresentations/blob/master/docs/r-tutorial-practice.csv)
+
+# Data Preprocessing
+`read.table`/`write.table`;<br>`load`/`save.image`;<br>`source`/`dump`
+
+## Reading tables
+- `read.table` or `read.csv` inputs a table into R as a data frame.
+- The important arguments include:
+    - file: the file path or `file.choose`
+    - header: whether the first row should be regarded as names
+    - sep: specified separator for the table (e.g. “,” for .csv files)
+
+    ```{r}
+    demo.table <- read.csv("r-tutorial-demo.csv")
+    ```
+
+- `write.table` or `write.csv` outputs data in a spreadsheet.    
+
+## Reading a saved workspace
+- `load` inputs previously saved workspace into R.
+- Workspace contains objects we’ve assigned.
+- `save.image` saves the whole current workspace as a .RData file.
+
+    ```{r, eval = FALSE}
+    save.image("tutorial.RData")  # Save the whole workspace
+    q()                           # Quit the R session
+    # After turning on a new R session and setting the working directory
+    load("tutorial.RData")
+    ```
+
+## Reading written codes
+- `source` inputs a written .R file into R.
+- `dump` can be used to save .R files.
+
+## Looking at the data - 1
+```{r}
+demo.table
+```
+
+## Looking at the data - 2
+```{r}
+head(demo.table)
+# Try tail(demo.table) by yourself
+```
+
+## Looking at the data - 3
+```{r}
+summary(demo.table)
+```
+
+## Looking at the data - 4
+```{r}
+str(demo.table)
+```
+
+## Practice
+Take a look at the data frame you created earlier.
+```{r, echo = FALSE}
+str(data.frame(num = 1:3,
+           age = factor(c("young", "old", "young"),
+                        levels = c("young", "old")),
+           RT = c(12, 50, 15),
+           MMSEpass = c(TRUE, FALSE, TRUE)))
+```
+
+# Extracting Subsets
+
+## Subsetting operators - 1
+- `[]` extracts elements by names, indexes, or logical values.
+    - It can be used to select more than one element.
+    - It usually returns an object as the same class as the original.
+- `[[]]` extracts elements from lists and data frames.
+    - It can extract only one element.
+    - Returned objects are not necessarily the same class as the original.
+- `$` extracts elements by name.
+
+## Subsetting operators - 2
+- By default, subsetting a single row or a single column from a matrix will return a vector, unless the argument "drop" is FALSE.
+
+    ```{r}
+    demo.table$height
+    # What if I only need the 2nd, 4th, and 5th elements of the heights?
+    ```
+
+# Vectorized Operations
+
+## Vectorized operations in R
+
+```{r, eval = FALSE}
+x <- 1:3
+y <- 4:6
+# x + y = ?
+
+a <- 1:4
+b <- 1:2
+# a - b = ?
+
+m <- matrix(6, 2, 2)
+n <- matrix(1:4, 2, 2)
+# m * n = ?
+# m %*% n = ?
+```
+
+## Practice
+1. Read the .csv file, "r-tutorial-practice.csv", into your R session.
+2. Look at the input data frame. Watch its components, structure, etc.
+3. Revise the units of height and weight. (Height: from cm to m; Weight: from g to kg)
+4. Calculate the BMIs of all the 11 participants and assign them as a new column called BMI of your data frame.
+5. Report the BMIs of those who have MMSE passed.
+6. Which participants have BMI greater than 25?
+7. Export the revised data frame as a new csv file called "my-success.csv" to your working directory.
+
+# Control Structures
+`if`, `for`, `while`. These loops can be nested.
+
+## Relational and logical operators
+- `==` (equal to)
+- `>=` (greater than or equal to)
+- `<=` (less than or equal to)
+- `>` (greater than)
+- `<` (less than)
+- `!=` (not equal to)
+- `!` (not)
+- `&` (and)
+- `|` (or)
+
+    ```{r}
+    1:3 != 2
+    ```
+
+## if
+
+```{r, eval = FALSE}
+if (<condition 1>) {
+  # do something
+  # the only necessary part of if structures
+}
+else if (<condition 2>) {
+  # do something different
+}
+else {
+  # do something else
+}
+```
+
+## for
+- A `for` loop takes an iteration variable, and assigns it successive values from a sequence or a vector.
+
+    ```{r}
+    x <- c(90, 87, 60, 45, 50)
+    for (i in 1:5) {
+      if (x[i] >= 60) {
+        print("Pass")
+      }
+      else {
+        print("Fail")
+      }
+    }
+    ```
+
+## while
+- `while` loops begin with testing a condition. If it is true, then execute the body. After the execution, the condition will be tested again.
+- `while` loops can possibly cause infinite loops if not written properly.
+
+    ```{r}
+    i <- 1
+    while (i < 4) {
+      i <- i + 1
+      print(i)
+    }
+    ```
+
+## Practice
+1. Write a loop to revise the unreasonable waist (> 35 inches) in your practiced data frame from centimeters to inches (1 inch = 2.5 cm).
+2. The participant with missing waist information has 27 waist. Update your data frame accordingly. DO NOT do `practice.table$waist[10] <- 27`.
+3. Export and overwrite "my-success.csv".
+
+# Advanced: Writing Functions
+
+## The first function
+
+```{r}
+add <- function(x, y) {
+  x + y
+}
+add(2, 3)
+```
+
+## Practice
+Try to create a function, which can subset and print out elements greater than a specified number from a numeric vector.
+
+```{r, eval = FALSE}
+greaters <- function(x, n) {
+  # Your codes here
+}
+# For example, greaters(1:5, 3) should return 4 and 5.
+```
+
+# Applaud Yourself!!
