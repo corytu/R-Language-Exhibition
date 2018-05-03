@@ -39,7 +39,7 @@ After a brief introduction of R plotting systems, a guidance for creating scatte
 An R tutorial which covers the history and overview of R, the characteristics of various R objects, and vectorized operations. It also contains the functions people use to input/output the data or scripts. The control structures and function writing in R are introduced in the end.
 
 # Other Code Files
-* __[my-grid-arrange-shared-legend.R](https://github.com/corytu/RLanguagePresentations/blob/master/my-grid-arrange-shared-legend.R)__: Arrange grobs with a shared legend. Shared axes are also allowed. Detailed discription is in the .R file. The only needed preparation is downloading and `source` it in R. Required packages will be installed if they cannot be found in library paths.
-* [Taiwan-tourism-economics.R](https://github.com/corytu/RLanguagePresentations/blob/master/Taiwan-tourism-economics.R): Create a motion chart by `googleVis` package, showing some economic indexes and tourist numbers in Taiwan in recent years.
+* __[my-grid-arrange-shared-legend.R](https://github.com/corytu/RLanguagePresentations/blob/master/docs/my-grid-arrange-shared-legend.R)__: Arrange grobs with a shared legend. Shared axes are also allowed. Detailed discription is in the .R file. The only needed preparation is downloading and `source` it in R. Required packages will be installed if they cannot be found in library paths.
+* [Taiwan-tourism-economics.R](https://github.com/corytu/RLanguagePresentations/blob/master/docs/Taiwan-tourism-economics.R): Create a motion chart by `googleVis` package, showing some economic indexes and tourist numbers in Taiwan in recent years.
 
-Last update: May 1, 2018
+Last update: May 3, 2018
