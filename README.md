@@ -1,5 +1,7 @@
 # R Language Presentations
-Hello! My name is Yu-Zhen Tu, and I am from Taiwan. This repository is built to demonstrate my works done in R language.
+Hello! My name is Yu-Zhen Tu. I am currently a data engineer at [Health2Sync](https://www.health2sync.com/?lang=en-us).
+
+I love R language because it is so powerful in data analyses and in presenting meaningful results. This repository is built to demonstrate my works done in R language.
 
 # Project Demonstration
 
@@ -42,4 +44,4 @@ An R tutorial which covers the history and overview of R, the characteristics of
 * __[my-grid-arrange-shared-legend.R](https://github.com/corytu/RLanguagePresentations/blob/master/docs/my-grid-arrange-shared-legend.R)__: Arrange grobs with a shared legend. Shared axes are also allowed. Detailed discription is in the .R file. The only needed preparation is downloading and `source` it in R. Required packages will be installed if they cannot be found in library paths.
 * [Taiwan-tourism-economics.R](https://github.com/corytu/RLanguagePresentations/blob/master/docs/Taiwan-tourism-economics.R): Create a motion chart by `googleVis` package, showing some economic indexes and tourist numbers in Taiwan in recent years.
 
-Last update: May 3, 2018
+Last update: May 4, 2018
