@@ -24,11 +24,11 @@ I used support vector machine, decision tree, and random forests techniques to p
 
 ## Assignments of [Developing Data Products](https://www.coursera.org/learn/data-products/home/info) on Coursera
 * [Air quality in New York in 1973](https://corytu.shinyapps.io/airquality/) (Feb 2017)<br>
-My first Shiny application uses "airquality" data frame in R and plots the relationship between selected variables. Details are available <a href="https://corytu.github.io/RLanguagePresentations/docs/Air_Quality_in_New_York_in_1973.html">here</a>.
+My first Shiny application uses `airquality` data frame in R and plots the relationship between selected variables. Details are available from [this Slidy presentation](https://corytu.github.io/RLanguagePresentations/docs/Air_Quality_in_New_York_in_1973.html). [The source code](docs/airquality_app.R) are also uploaded.
 * [Taiwan National Parks](https://corytu.github.io/RLanguagePresentations/docs/Taiwan_National_Parks.html) (Feb 2017)<br>
-It shows all nine national parks in Taiwan. The hyperlinks to each national park are provided once users click the markers.
+It shows all nine national parks in Taiwan with `leaflet`. The hyperlinks to each national park are provided once users click the markers.
 * [Playing mtcars dataset](https://corytu.github.io/RLanguagePresentations/docs/play_mtcars_dataset.html) (Feb 2017)<br>
-It is a rather simple presentation with plotly tool. The data are from R built-in "mtcars" dataset.
+It is a rather simple presentation with `plotly` tool. The data are from R built-in `mtcars` dataset.
 
 # Given Tutorial Slides and Website
 * [Coursera Mentoring Records](https://corytu.github.io/CourseraRMentoring/) (Updating)<br>
@@ -44,4 +44,4 @@ An R tutorial which covers the history and overview of R, the characteristics of
 * __[my-grid-arrange-shared-legend.R](https://github.com/corytu/RLanguagePresentations/blob/master/docs/my-grid-arrange-shared-legend.R)__: Arrange grobs with a shared legend. Shared axes are also allowed. Detailed discription is in the .R file. The only needed preparation is downloading and `source` it in R. Required packages will be installed if they cannot be found in library paths.
 * [Taiwan-tourism-economics.R](https://github.com/corytu/RLanguagePresentations/blob/master/docs/Taiwan-tourism-economics.R): Create a motion chart by `googleVis` package, showing some economic indexes and tourist numbers in Taiwan in recent years.
 
-Last update: May 4, 2018
+Last update: May 8, 2018
