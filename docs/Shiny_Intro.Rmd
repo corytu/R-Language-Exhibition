@@ -9,9 +9,21 @@ output: ioslides_presentation
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+## What is Shiny?
+
+- An R package that builds interactive web apps directly from R
+- Can be presented by:
+    - standalone apps on a webpage (compatible with mobile platforms)
+    - [R Markdown](http://rmarkdown.rstudio.com/) documents
+    - [Dashboards](http://rstudio.github.io/shinydashboard/)
+- Can be extended with:
+    - [CSS themes](http://rstudio.github.io/shinythemes/)
+    - [htmlwidgets](http://www.htmlwidgets.org/)
+    - JavaScript [actions](https://github.com/daattali/shinyjs/blob/master/README.md)
+
 ## Slide with Highlighted codes
 
-```{r cars, echo = TRUE, eval = FALSE}
+```{r, echo = TRUE, eval = FALSE}
 summary(cars)
 ### <b>
 x <- 10
