@@ -18,13 +18,13 @@ ui <- fluidPage(
         choices = names(airquality)[1:4]
       ),
       h5("Ozone:"),
-      h6("Mean ozone in parts per billion from 1300 to 1500 hours at Roosevelt Island"),
+      "Mean ozone in parts per billion from 1300 to 1500 hours at Roosevelt Island",
       h5("Solar.R:"),
-      h6("Solar radiation in Langleys in the frequency band 4000-7700 Angstroms from 0800 to 1200 hours at Central Park"),
+      "Solar radiation in Langleys in the frequency band 4000-7700 Angstroms from 0800 to 1200 hours at Central Park",
       h5("Wind:"),
-      h6("Average wind speed in miles per hour at 0700 and 1000 hours at LaGuardia Airport"),
+      "Average wind speed in miles per hour at 0700 and 1000 hours at LaGuardia Airport",
       h5("Temp:"),
-      h6("Maximum daily temperature in degrees Fahrenheit at La Guardia Airport."),
+      "Maximum daily temperature in degrees Fahrenheit at La Guardia Airport",
       tags$i(helpText("Data from R built-in airquality data set")),
       submitButton("Confirm")
     ),
