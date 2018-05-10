@@ -6,9 +6,6 @@ ui <- fluidPage(
   titlePanel("New York Air Quality Measurements, May to September 1973"),
   sidebarLayout(
     sidebarPanel(
-      helpText("1. Select one month and one variable which interest you"),
-      helpText("2. Click \"Confirm\""),
-      helpText("3. The line graph (with a blue trend curve) of the chosen variable versus days of the month will be showed"),
       selectInput(
         "month", "Select the month",
         choices = month.name[5:9]
@@ -17,16 +14,19 @@ ui <- fluidPage(
         "obs", "Select one variable",
         choices = names(airquality)[1:4]
       ),
-      h5("Ozone:"),
-      "Mean ozone in parts per billion from 1300 to 1500 hours at Roosevelt Island",
-      h5("Solar.R:"),
-      "Solar radiation in Langleys in the frequency band 4000-7700 Angstroms from 0800 to 1200 hours at Central Park",
-      h5("Wind:"),
-      "Average wind speed in miles per hour at 0700 and 1000 hours at LaGuardia Airport",
-      h5("Temp:"),
-      "Maximum daily temperature in degrees Fahrenheit at La Guardia Airport",
+      submitButton("Confirm"),
+      helpText("1. Select one month and one variable which interest you"),
+      helpText("2. Click \"Confirm\""),
+      helpText("3. The line graph (with a blue trend curve) of the chosen variable versus days of the month will be showed"),
       tags$i(helpText("Data from R built-in airquality data set")),
-      submitButton("Confirm")
+      HTML("<div><b>Ozone:</b><br>
+           Mean ozone in parts per billion from 1300 to 1500 hours at Roosevelt Island<br>
+           <b>Solar.R:</b><br>
+           Solar radiation in Langleys in the frequency band 4000-7700 Angstroms from 0800 to 1200 hours at Central Park<br>
+           <b>Wind:</b><br>
+           Average wind speed in miles per hour at 0700 and 1000 hours at LaGuardia Airport<br>
+           <b>Temp:</b><br>
+           Maximum daily temperature in degrees Fahrenheit at La Guardia Airport</div>")
     ),
     # Show a plot of the selected condition
     mainPanel(
