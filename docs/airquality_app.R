@@ -14,6 +14,7 @@ ui <- fluidPage(
         "obs", "Select one variable",
         choices = names(airquality)[1:4]
       ),
+      # actionButton can be a better choice than submitButton
       submitButton("Confirm"),
       helpText("1. Select one month and one variable which interest you"),
       helpText("2. Click \"Confirm\""),
