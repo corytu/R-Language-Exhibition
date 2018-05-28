@@ -21,12 +21,47 @@ knitr::opts_chunk$set(echo = FALSE)
     - [htmlwidgets](http://www.htmlwidgets.org/)
     - JavaScript [actions](https://github.com/daattali/shinyjs/blob/master/README.md)
 
-## Slide with Highlighted codes
+## Built-in demo
 
 ```{r, echo = TRUE, eval = FALSE}
-summary(cars)
-### <b>
-x <- 10
-y <- x * 2
-### </b>
+library(shiny)
+
+ui <- fluidPage(
+   # Application title
+   titlePanel("Old Faithful Geyser Data"),
+   # Sidebar with a slider input for number of bins 
+   sidebarLayout(
+      sidebarPanel(
+         ###<b>
+         sliderInput("bins", "Number of bins:",
+                     min = 1, max = 50, value = 30)
+         ###</b>
+      ),
+      # Show a plot of the generated distribution
+      mainPanel(
+         ###<b>
+         plotOutput("distPlot")
+         ###</b>
+      )
+   )
+)
+```
+
+## Built-in demo (cont.)
+
+```{r, echo = TRUE, eval = FALSE}
+server <- function(input, output) {
+  # generate bins based on input$bins from ui.R
+  # draw the histogram with the specified number of bins
+  ###<b>
+   output$distPlot <- renderPlot({
+      x    <- faithful[, 2] 
+      bins <- seq(min(x), max(x), length.out = input$bins + 1)
+      hist(x, breaks = bins, col = 'darkgray', border = 'white')
+   })
+  ###</b>
+}
+
+# Run the application 
+shinyApp(ui = ui, server = server)
 ```

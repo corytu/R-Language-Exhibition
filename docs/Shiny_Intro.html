@@ -117,12 +117,40 @@
 </ul></li>
 </ul>
 
-</article></slide><slide class=""><hgroup><h2>Slide with Highlighted codes</h2></hgroup><article  id="slide-with-highlighted-codes">
+</article></slide><slide class=""><hgroup><h2>Built-in demo</h2></hgroup><article  id="built-in-demo">
 
-<pre class = 'prettyprint lang-r'>summary(cars)
-<b>x &lt;- 10
-y &lt;- x * 2
-</b></pre></article></slide>
+<pre class = 'prettyprint lang-r'>library(shiny)
+
+ui &lt;- fluidPage(
+   # Application title
+   titlePanel(&quot;Old Faithful Geyser Data&quot;),
+   # Sidebar with a slider input for number of bins 
+   sidebarLayout(
+      sidebarPanel(
+<b>         sliderInput(&quot;bins&quot;, &quot;Number of bins:&quot;,
+                     min = 1, max = 50, value = 30)
+</b>      ),
+      # Show a plot of the generated distribution
+      mainPanel(
+<b>         plotOutput(&quot;distPlot&quot;)
+</b>      )
+   )
+)</pre>
+
+</article></slide><slide class=""><hgroup><h2>Built-in demo (cont.)</h2></hgroup><article  id="built-in-demo-cont.">
+
+<pre class = 'prettyprint lang-r'>server &lt;- function(input, output) {
+  # generate bins based on input$bins from ui.R
+  # draw the histogram with the specified number of bins
+<b>   output$distPlot &lt;- renderPlot({
+      x    &lt;- faithful[, 2] 
+      bins &lt;- seq(min(x), max(x), length.out = input$bins + 1)
+      hist(x, breaks = bins, col = &#39;darkgray&#39;, border = &#39;white&#39;)
+   })
+</b>}
+
+# Run the application 
+shinyApp(ui = ui, server = server)</pre></article></slide>
 
 
   <slide class="backdrop"></slide>
