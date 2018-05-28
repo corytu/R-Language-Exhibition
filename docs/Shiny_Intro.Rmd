@@ -13,13 +13,19 @@ knitr::opts_chunk$set(echo = FALSE)
 
 - An R package that builds interactive web apps directly from R
 - Can be presented by:
-    - standalone apps on a webpage (compatible with mobile platforms)
+    - Standalone apps on a webpage (compatible with mobile platforms)
     - [R Markdown](http://rmarkdown.rstudio.com/) documents
     - [Dashboards](http://rstudio.github.io/shinydashboard/)
 - Can be extended with:
     - [CSS themes](http://rstudio.github.io/shinythemes/)
     - [htmlwidgets](http://www.htmlwidgets.org/)
     - JavaScript [actions](https://github.com/daattali/shinyjs/blob/master/README.md)
+    
+## Why Shiny?
+
+- Present results (plots, tables, texts, or even value boxes) interactively without leaving analysis pipelines in R
+- Easy to share after being deployed (just an URL will do)
+- Supported by many other packages, e.g. `leaflet` and `plotly`
 
 ## Built-in demo
 
