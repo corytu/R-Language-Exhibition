@@ -1,13 +1,15 @@
 ---
-title: "Data Viz with R - Shiny"
+title: "Data Viz with R - Shiny (II)"
 author: "Yu-Zhen Tu<br>Data engineer at <a href=\"https://www.health2sync.com/tw/\">Health2Sync</a><br>Community Mentor of JHU \"R programming\" on Coursera"
-date: "September X, 2018"
+date: "October 1, 2018"
 output: ioslides_presentation
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
+
+# Basic Concepts
 
 ## What is Shiny?
 
@@ -61,7 +63,7 @@ server <- function(input, output) {
   # draw the histogram with the specified number of bins
   ###<b>
    output$distPlot <- renderPlot({
-      x    <- faithful[, 2] 
+      x    <- faithful[, 2]
       bins <- seq(min(x), max(x), length.out = input$bins + 1)
       hist(x, breaks = bins, col = 'darkgray', border = 'white')
    })
@@ -71,3 +73,76 @@ server <- function(input, output) {
 # Run the application 
 shinyApp(ui = ui, server = server)
 ```
+
+# More Configurations
+
+## More inputs and outputs
+
+- [Shiny cheatsheet](https://www.rstudio.com/resources/cheatsheets/#shiny)
+- Provided by other packages, such as `plotly::renderPlotly` and `plotly::plotlyOutput`
+
+## HTML tags in Shiny
+
+- `h1` through `h6`
+- `em`, `code`, `image`, `br`...
+- Use `tags` list to pick required tag
+- Use `HTML` to write HTML codes directly
+- BTW, `helpText` to create help texts
+
+## Submit button
+
+- Delayed execution
+- Usually used when the app takes much time or resource for calculation
+- `submitButton`, or more versatile, `actionButton`
+
+## Reactivity
+
+- Reactive expressions
+- Subject to changes in UI inputs
+- Wrapped by `reactive` function
+
+    ```{r, echo = TRUE, eval = FALSE}
+    # It's like creating a function
+    cal_diff <- reactive({
+      input$total1 - input$total2
+    })
+
+    cal_diff()
+    ```
+
+## Combining `ggplot2` into `Shiny`
+
+- Try to create [this app](https://corytu.shinyapps.io/airquality/)
+- [airquality_app.R](https://github.com/corytu/RLanguagePresentations/blob/master/docs/airquality_app.R)
+- Using characters in `ggplot2` functions
+    - `aes_string` in `ggplot`
+    - `paste` and `as.formula` in `facet_grid`
+
+# App Deployment
+
+## [shinyapps.io](https://www.shinyapps.io)
+
+- Pros:
+    - Can be totally free
+    - Simple
+    - Scalable (?)
+- Cons:
+    - Less flexible
+    - Limited resources for free plan
+- [User Guide for deployment](http://docs.rstudio.com/shinyapps.io/getting-started.html#deploying-applications)
+
+## [Shiny Server](https://www.rstudio.com/products/shiny/shiny-server/) on VM
+
+- [Step-by-step documentation](https://github.com/corytu/OldPopulationProportions/blob/master/setup/howto_deploy_onGCP.md) on Google Cloud Platform
+
+# Cases and Resources
+
+## Case sharing
+
+- [臺銀外匯資料](https://corytu.shinyapps.io/currency-dashboard/)
+- [臺灣各鄉鎮市區老化情形](https://corytu.shinyapps.io/old-population-proportions/)
+
+## MOOC and other demos
+
+- [Developing Data Products](https://www.coursera.org/learn/data-products) on Coursera, offered by JHU
+- [Shiny Gallery](https://shiny.rstudio.com/gallery/)

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Data Viz with R - Shiny</title>
+  <title>Data Viz with R - Shiny (II)</title>
 
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -20,7 +20,7 @@
     var SLIDE_CONFIG = {
       // Slide settings
       settings: {
-                title: 'Data Viz with R - Shiny',
+                title: 'Data Viz with R - Shiny (II)',
                         useBuilds: true,
         usePrettify: true,
         enableSlideAreas: true,
@@ -93,11 +93,13 @@
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
       <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
       <p data-config-presenter><!-- populated from slide_config.json --></p>
-            <p style="margin-top: 6px; margin-left: -2px;">September X, 2018</p>
+            <p style="margin-top: 6px; margin-left: -2px;">October 1, 2018</p>
           </hgroup>
   </slide>
 
-<slide class=""><hgroup><h2>What is Shiny?</h2></hgroup><article  id="what-is-shiny">
+<slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Basic Concepts</h2></hgroup><article  id="basic-concepts">
+
+</article></slide><slide class=""><hgroup><h2>What is Shiny?</h2></hgroup><article  id="what-is-shiny">
 
 <ul>
 <li>An R package that builds interactive web apps directly from R</li>
@@ -151,14 +153,112 @@ ui &lt;- fluidPage(
   # generate bins based on input$bins from ui.R
   # draw the histogram with the specified number of bins
 <b>   output$distPlot &lt;- renderPlot({
-      x    &lt;- faithful[, 2] 
+      x    &lt;- faithful[, 2]
       bins &lt;- seq(min(x), max(x), length.out = input$bins + 1)
       hist(x, breaks = bins, col = &#39;darkgray&#39;, border = &#39;white&#39;)
    })
 </b>}
 
 # Run the application 
-shinyApp(ui = ui, server = server)</pre></article></slide>
+shinyApp(ui = ui, server = server)</pre>
+
+</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>More Configurations</h2></hgroup><article  id="more-configurations">
+
+</article></slide><slide class=""><hgroup><h2>More inputs and outputs</h2></hgroup><article  id="more-inputs-and-outputs">
+
+<ul>
+<li><a href='https://www.rstudio.com/resources/cheatsheets/#shiny' title=''>Shiny cheatsheet</a></li>
+<li>Provided by other packages, such as <code>plotly::renderPlotly</code> and <code>plotly::plotlyOutput</code></li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>HTML tags in Shiny</h2></hgroup><article  id="html-tags-in-shiny">
+
+<ul>
+<li><code>h1</code> through <code>h6</code></li>
+<li><code>em</code>, <code>code</code>, <code>image</code>, <code>br</code>&#8230;</li>
+<li>Use <code>tags</code> list to pick required tag</li>
+<li>Use <code>HTML</code> to write HTML codes directly</li>
+<li>BTW, <code>helpText</code> to create help texts</li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Submit button</h2></hgroup><article  id="submit-button">
+
+<ul>
+<li>Delayed execution</li>
+<li>Usually used when the app takes much time or resource for calculation</li>
+<li><code>submitButton</code>, or more versatile, <code>actionButton</code></li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Reactivity</h2></hgroup><article  id="reactivity">
+
+<ul>
+<li>Reactive expressions</li>
+<li>Subject to changes in UI inputs</li>
+<li><p>Wrapped by <code>reactive</code> function</p>
+
+<pre class = 'prettyprint lang-r'># It&#39;s like creating a function
+cal_diff &lt;- reactive({
+  input$total1 - input$total2
+})
+
+cal_diff()</pre></li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Combining <code>ggplot2</code> into <code>Shiny</code></h2></hgroup><article  id="combining-ggplot2-into-shiny">
+
+<ul>
+<li>Try to create <a href='https://corytu.shinyapps.io/airquality/' title=''>this app</a></li>
+<li><a href='https://github.com/corytu/RLanguagePresentations/blob/master/docs/airquality_app.R' title=''>airquality_app.R</a></li>
+<li>Using characters in <code>ggplot2</code> functions
+
+<ul>
+<li><code>aes_string</code> in <code>ggplot</code></li>
+<li><code>paste</code> and <code>as.formula</code> in <code>facet_grid</code></li>
+</ul></li>
+</ul>
+
+</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>App Deployment</h2></hgroup><article  id="app-deployment">
+
+</article></slide><slide class=""><hgroup><h2><a href='https://www.shinyapps.io' title=''>shinyapps.io</a></h2></hgroup><article  id="shinyapps.io">
+
+<ul>
+<li>Pros:
+
+<ul>
+<li>Can be totally free</li>
+<li>Simple</li>
+<li>Scalable (?)</li>
+</ul></li>
+<li>Cons:
+
+<ul>
+<li>Less flexible</li>
+<li>Limited resources for free plan</li>
+</ul></li>
+<li><a href='http://docs.rstudio.com/shinyapps.io/getting-started.html#deploying-applications' title=''>User Guide for deployment</a></li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2><a href='https://www.rstudio.com/products/shiny/shiny-server/' title=''>Shiny Server</a> on VM</h2></hgroup><article  id="shiny-server-on-vm">
+
+<ul>
+<li><a href='https://github.com/corytu/OldPopulationProportions/blob/master/setup/howto_deploy_onGCP.md' title=''>Step-by-step documentation</a> on Google Cloud Platform</li>
+</ul>
+
+</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Cases and Resources</h2></hgroup><article  id="cases-and-resources">
+
+</article></slide><slide class=""><hgroup><h2>Case sharing</h2></hgroup><article  id="case-sharing">
+
+<ul>
+<li><a href='https://corytu.shinyapps.io/currency-dashboard/' title=''>臺銀外匯資料</a></li>
+<li><a href='https://corytu.shinyapps.io/old-population-proportions/' title=''>臺灣各鄉鎮市區老化情形</a></li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>MOOC and other demos</h2></hgroup><article  id="mooc-and-other-demos">
+
+<ul>
+<li><a href='https://www.coursera.org/learn/data-products' title=''>Developing Data Products</a> on Coursera, offered by JHU</li>
+<li><a href='https://shiny.rstudio.com/gallery/' title=''>Shiny Gallery</a></li>
+</ul></article></slide>
 
 
   <slide class="backdrop"></slide>
