@@ -1,19 +1,19 @@
 # R Language Presentations
 Hello! My name is Yu-Zhen Tu. I am currently a data engineer at [Health2Sync](https://www.health2sync.com/?lang=en-us).
 
-I love R language because it is so powerful in data analyses and in presenting meaningful results. This repository is built to demonstrate my works done in R language.
+I love R language because it is so powerful in data analyses and in presenting meaningful results. This repository is built to share my works done in R language.
 
 # Project Demonstration
 
 ## Personal side projects
-* __[Currency Dashboard of NTD](https://corytu.shinyapps.io/currency-dashboard/) (Jul 2017)<br>__
+* __[Currency Dashboard of NTD](https://corytu.shinyapps.io/currency-dashboard/)__ (Jul 2017)<br>
     * Parse from [Bank of Taiwan](http://www.bot.com.tw/Pages/default.aspx) and present
         1. the latest currency information, and
         2. the latest interest information with interactive plots and tables
     * Compare the exchanges prices between that of today and that of last week
     * Calculate the return of investment if additional information provided
     * [CurrencyDashboard](https://github.com/corytu/CurrencyDashboard) is my GitHub repository sharing the source code.
-* __[Old Population Proportions in Districts in Taiwan](https://corytu.shinyapps.io/old-population-proportions/) (Mar 2017)<br>__
+* __[Old Population Proportions in Districts in Taiwan](https://corytu.shinyapps.io/old-population-proportions/)__ (Mar 2017)<br>
 This Shiny app illustrates the percentages of old population in every district in Taiwan. It is widely referred in local health authorities in Taiwan, helping the promotion of primary health and creating an elder-friendly society. Last updated in Febuary 2018. The source codes are in another repository of mine: [OldPopulationProportions](https://github.com/corytu/OldPopulationProportions).
 * [Relationships between Visitor Numbers and Taiwan Economics (Flash Player required)](https://corytu.github.io/RLanguagePresentations/docs/Relationships_between_Visitor_Numbers_and_Taiwan_Economics.html) (Mar 2017)<br>
 The webpage implements `googleVis` package of R and demonstrates the relationships between visitor numbers and multiple economics indexes in Taiwan. Taiwan's economic system seems to have been strongly affected by China. We need to find our way to guarantee our economy growth without China's support if we want independence of our country.
@@ -33,6 +33,8 @@ It is a rather simple presentation with `plotly` tool. The data are from R built
 # Given Tutorial Slides and Website
 * [Coursera Mentoring Records](https://corytu.github.io/CourseraRMentoring/) (Updating)<br>
 Mentoring records and my helping articles on "R Programming", Coursera.
+* __[Data Viz with R - Shiny](https://corytu.github.io/RLanguagePresentations/docs/Shiny_Intro.html)__ (Oct 2018)<br>
+Hosted an event and shared my Shiny experiences on [Taiwan R User Group / MLDM Monday Meetup](https://www.meetup.com/Taiwan-R/events/254369159/).
 * [R tutorial](https://corytu.github.io/RLanguagePresentations/docs/R-Tutorial.html) (Jul 2017)<br>
 New tutorial slides created with R markdown. Additional practices are provided, compared with the tutorial last year.
 * <a href="https://corytu.github.io/RLanguagePresentations/docs/Plotting_with_R_ggplot2.html">Plotting with R: ggplot2</a> (Mar 2017)<br>
@@ -44,4 +46,4 @@ An R tutorial which covers the history and overview of R, the characteristics of
 * __[my-grid-arrange-shared-legend.R](https://github.com/corytu/RLanguagePresentations/blob/master/docs/my-grid-arrange-shared-legend.R)__: Arrange grobs with a shared legend. Shared axes are also allowed. Detailed discription is in the .R file. The only needed preparation is downloading and `source` it in R. Required packages will be installed if they cannot be found in library paths.
 * [Taiwan-tourism-economics.R](https://github.com/corytu/RLanguagePresentations/blob/master/docs/Taiwan-tourism-economics.R): Create a motion chart by `googleVis` package, showing some economic indexes and tourist numbers in Taiwan in recent years.
 
-Last update: May 8, 2018
+Last update: September 8, 2018
