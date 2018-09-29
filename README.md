@@ -31,10 +31,10 @@ It shows all nine national parks in Taiwan with `leaflet`. The hyperlinks to eac
 It is a rather simple presentation with `plotly` tool. The data are from R built-in `mtcars` dataset.
 
 # Given Tutorial Slides and Website
-* [Coursera Mentoring Records](https://corytu.github.io/CourseraRMentoring/) (Updating)<br>
-Mentoring records and my helping articles on "R Programming", Coursera.
 * __[Data Viz with R - Shiny](https://corytu.github.io/RLanguagePresentations/docs/Shiny_Intro.html)__ (Oct 2018)<br>
 Hosted an event and shared my Shiny experiences on [Taiwan R User Group / MLDM Monday Meetup](https://www.meetup.com/Taiwan-R/events/254369159/).
+* [Coursera Mentoring Records](https://corytu.github.io/CourseraRMentoring/) (Sep 2018)<br>
+Mentoring records and my helping articles on "R Programming", Coursera.
 * [R tutorial](https://corytu.github.io/RLanguagePresentations/docs/R-Tutorial.html) (Jul 2017)<br>
 New tutorial slides created with R markdown. Additional practices are provided, compared with the tutorial last year.
 * <a href="https://corytu.github.io/RLanguagePresentations/docs/Plotting_with_R_ggplot2.html">Plotting with R: ggplot2</a> (Mar 2017)<br>
@@ -46,4 +46,4 @@ An R tutorial which covers the history and overview of R, the characteristics of
 * __[my-grid-arrange-shared-legend.R](https://github.com/corytu/RLanguagePresentations/blob/master/docs/my-grid-arrange-shared-legend.R)__: Arrange grobs with a shared legend. Shared axes are also allowed. Detailed discription is in the .R file. The only needed preparation is downloading and `source` it in R. Required packages will be installed if they cannot be found in library paths.
 * [Taiwan-tourism-economics.R](https://github.com/corytu/RLanguagePresentations/blob/master/docs/Taiwan-tourism-economics.R): Create a motion chart by `googleVis` package, showing some economic indexes and tourist numbers in Taiwan in recent years.
 
-Last update: September 8, 2018
+Last update: September 30, 2018

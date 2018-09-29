@@ -1,6 +1,6 @@
 ---
 title: "Data Viz with R - Shiny (II)"
-author: "Yu-Zhen Tu<br>Data engineer at <a href=\"https://www.health2sync.com/tw/\">Health2Sync</a><br>Community Mentor of JHU \"R programming\" on Coursera"
+author: "Yu-Zhen Tu<br>Data engineer at <a href=\"https://www.health2sync.com/tw/\">Health2Sync</a>"
 date: "October 1, 2018"
 output: ioslides_presentation
 ---
