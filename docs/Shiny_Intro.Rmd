@@ -87,7 +87,7 @@ shinyApp(ui = ui, server = server)
 ## HTML tags in Shiny
 
 - `h1` through `h6`
-- `em`, `code`, `image`, `br`...
+- `em`, `code`, `img`, `br`...
 - Use `tags` list to pick required tag
 - Use `HTML` to write HTML codes directly
 - BTW, `helpText` to create help texts
