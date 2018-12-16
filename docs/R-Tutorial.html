@@ -98,7 +98,7 @@
           </hgroup>
   </slide>
 
-<slide class=''><hgroup><h2>Outline</h2></hgroup><article  id="outline">
+<slide class=""><hgroup><h2>Outline</h2></hgroup><article  id="outline">
 
 <ul>
 <li>Overview of R</li>
@@ -114,11 +114,11 @@
 <li>Writing functions</li>
 </ul>
 
-</article></slide><slide class='segue dark nobackground level1'><hgroup class = 'auto-fadein'><h2>Overview of R</h2></hgroup><article  id="overview-of-r">
+</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Overview of R</h2></hgroup><article  id="overview-of-r">
 
 <p>R as a language and a free software</p>
 
-</article></slide><slide class=''><hgroup><h2>R programming language</h2></hgroup><article  id="r-programming-language">
+</article></slide><slide class=""><hgroup><h2>R programming language</h2></hgroup><article  id="r-programming-language">
 
 <ul>
 <li>R is a dialect of S.</li>
@@ -130,7 +130,7 @@
 <li>R version 3.4.1 was released on June 30, 2017.</li>
 </ul>
 
-</article></slide><slide class=''><hgroup><h2>R is a free software</h2></hgroup><article  id="r-is-a-free-software">
+</article></slide><slide class=""><hgroup><h2>R is a free software</h2></hgroup><article  id="r-is-a-free-software">
 
 <ul>
 <li>One is granted:
@@ -144,13 +144,13 @@
 <li>“We call this free software because the user is free.” (<a href='https://www.fsf.org' title=''>The Free Software Foundation</a>)</li>
 </ul>
 
-</article></slide><slide class='segue dark nobackground level1'><hgroup class = 'auto-fadein'><h2>Input and Evaluation</h2></hgroup><article  id="input-and-evaluation">
+</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Input and Evaluation</h2></hgroup><article  id="input-and-evaluation">
 
-</article></slide><slide class=''><hgroup><h2>Input</h2></hgroup><article  id="input">
+</article></slide><slide class=""><hgroup><h2>Input</h2></hgroup><article  id="input">
 
 <ul>
 <li>Use <code>&lt;-</code> as the assignment operator.</li>
-<li><code>=</code> is also eligible but I recommend <code>&lt;-</code>. <a href='https://corytu.github.io/CourseraRMentoring/use-equal-or-arrow.html' title=''>Here</a> is my reason for that.</li>
+<li><code>=</code> is also eligible but I recommend <code>&lt;-</code>. <a href='https://corytu.github.io/CourseraRMentoring/articles/use-equal-or-arrow.html' title=''>Here</a> is my reason for that.</li>
 <li><p><code>#</code> starts comments. Comments won’t be executed.</p>
 
 <pre class = 'prettyprint lang-r'>x &lt;- 5
@@ -159,7 +159,7 @@ name &lt;- &quot;Yu-Zhen&quot;  # keying my name in
 <li><p>Incomplete expressions</p></li>
 </ul>
 
-</article></slide><slide class=''><hgroup><h2>Evaluation and printing</h2></hgroup><article  id="evaluation-and-printing">
+</article></slide><slide class=""><hgroup><h2>Evaluation and printing</h2></hgroup><article  id="evaluation-and-printing">
 
 <pre class = 'prettyprint lang-r'>x &lt;- 5    # inputting the value of x
 x         # auto-printing</pre>
@@ -170,11 +170,11 @@ x         # auto-printing</pre>
 
 <pre >[1] 5</pre>
 
-</article></slide><slide class='segue dark nobackground level1'><hgroup class = 'auto-fadein'><h2>Atomic Classes</h2></hgroup><article  id="atomic-classes">
+</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Atomic Classes</h2></hgroup><article  id="atomic-classes">
 
 <p>Character, numeric, integer, complex, and logical</p>
 
-</article></slide><slide class=''><hgroup><h2>Five basic classes of objects</h2></hgroup><article  id="five-basic-classes-of-objects">
+</article></slide><slide class=""><hgroup><h2>Five basic classes of objects</h2></hgroup><article  id="five-basic-classes-of-objects">
 
 <ul>
 <li>Character: <code>&quot;Yu-Zhen&quot;</code>, <code>letters</code>, <code>&quot;Hello world!&quot;</code></li>
@@ -185,7 +185,7 @@ x         # auto-printing</pre>
 <li>Use the function <code>class</code> to find out which class the object is.</li>
 </ul>
 
-</article></slide><slide class=''><hgroup><h2>Missing values</h2></hgroup><article  id="missing-values">
+</article></slide><slide class=""><hgroup><h2>Missing values</h2></hgroup><article  id="missing-values">
 
 <ul>
 <li><code>NA</code> (Not Available) and <code>NaN</code> (Not a Number)</li>
@@ -193,11 +193,11 @@ x         # auto-printing</pre>
 <li><code>is.na</code> and <code>is.nan</code> are used to test if objects are <code>NA</code> and <code>NaN</code>, respectively.</li>
 </ul>
 
-</article></slide><slide class='segue dark nobackground level1'><hgroup class = 'auto-fadein'><h2>Data Types</h2></hgroup><article  id="data-types">
+</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Data Types</h2></hgroup><article  id="data-types">
 
 <p>Vector, list, matrix, factor, and data frame</p>
 
-</article></slide><slide class=''><hgroup><h2>Vector</h2></hgroup><article  id="vector">
+</article></slide><slide class=""><hgroup><h2>Vector</h2></hgroup><article  id="vector">
 
 <ul>
 <li>Use the function <code>c</code> (or <code>vector</code>) to create a vector.</li>
@@ -211,7 +211,7 @@ x         # auto-printing</pre>
 <li><p>Explicit coercion can be performed with <code>as.</code>* functions.</p></li>
 </ul>
 
-</article></slide><slide class=''><hgroup><h2>List</h2></hgroup><article  id="list">
+</article></slide><slide class=""><hgroup><h2>List</h2></hgroup><article  id="list">
 
 <ul>
 <li>Use <code>list</code> to create a list.</li>
@@ -222,7 +222,7 @@ my_list2 &lt;- list(first = 1:3, second = letters, third = TRUE)
 # What&#39;s the difference between my_list and my_list2?</pre></li>
 </ul>
 
-</article></slide><slide class=''><hgroup><h2>Practice-1</h2></hgroup><article  id="practice-1">
+</article></slide><slide class=""><hgroup><h2>Practice-1</h2></hgroup><article  id="practice-1">
 
 <p>Create a list like this:</p>
 
@@ -235,7 +235,7 @@ $two
 $three
 [1]  TRUE FALSE  TRUE</pre>
 
-</article></slide><slide class=''><hgroup><h2>Matrix</h2></hgroup><article  id="matrix">
+</article></slide><slide class=""><hgroup><h2>Matrix</h2></hgroup><article  id="matrix">
 
 <ul>
 <li>Matrices are like vectors with two dimensions (row and column).</li>
@@ -255,7 +255,7 @@ $three
 [2,]    5    6    7    8</pre></li>
 </ul>
 
-</article></slide><slide class=''><hgroup><h2>Factor</h2></hgroup><article  id="factor">
+</article></slide><slide class=""><hgroup><h2>Factor</h2></hgroup><article  id="factor">
 
 <ul>
 <li><code>factor</code> creates factors from vectors.</li>
@@ -266,12 +266,12 @@ $three
 
 <pre >[1] high high low  mid  low 
 Levels: low mid high</pre></li>
-<li><a href='https://corytu.github.io/CourseraRMentoring/factor-levels-and-labels.html' title=''>Further reading</a> about factor levels</li>
+<li><a href='https://corytu.github.io/CourseraRMentoring/articles/factor-levels-and-labels.html' title=''>Further reading</a> about factor levels</li>
 <li>Factors are very useful for analyzing categorical variables.</li>
 <li><p>Pay extra attention when coercing factors into numbers.</p></li>
 </ul>
 
-</article></slide><slide class=''><hgroup><h2>Data frame</h2></hgroup><article  id="data-frame">
+</article></slide><slide class=""><hgroup><h2>Data frame</h2></hgroup><article  id="data-frame">
 
 <ul>
 <li><code>data.frame</code> can create one data frame.</li>
@@ -279,7 +279,7 @@ Levels: low mid high</pre></li>
 <li><code>cbind</code> and <code>rbind</code> are also effective for data frames.</li>
 </ul>
 
-</article></slide><slide class=''><hgroup><h2>Practice-2</h2></hgroup><article  id="practice-2">
+</article></slide><slide class=""><hgroup><h2>Practice-2</h2></hgroup><article  id="practice-2">
 
 <p>Try to make the following data frame. Save the object as &quot;practice.frame&quot;.<br><em>Hint: It&#39;s like creating a list but with the same length of vectors.</em></p>
 
@@ -288,9 +288,9 @@ Levels: low mid high</pre></li>
 2   2   old 50    FALSE
 3   3 young 15     TRUE</pre>
 
-</article></slide><slide class='segue dark nobackground level1'><hgroup class = 'auto-fadein'><h2>Help Documents</h2></hgroup><article  id="help-documents">
+</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Help Documents</h2></hgroup><article  id="help-documents">
 
-</article></slide><slide class=''><hgroup><h2>Looking up functions</h2></hgroup><article  id="looking-up-functions">
+</article></slide><slide class=""><hgroup><h2>Looking up functions</h2></hgroup><article  id="looking-up-functions">
 
 <ul>
 <li><code>?</code> or <code>help</code> gets the help document of the function.
@@ -309,9 +309,9 @@ Levels: low mid high</pre></li>
 </ul></li>
 </ul>
 
-</article></slide><slide class='segue dark nobackground level1'><hgroup class = 'auto-fadein'><h2>Working Directory</h2></hgroup><article  id="working-directory">
+</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Working Directory</h2></hgroup><article  id="working-directory">
 
-</article></slide><slide class=''><hgroup><h2>Retrieve and set working directory</h2></hgroup><article  id="retrieve-and-set-working-directory">
+</article></slide><slide class=""><hgroup><h2>Retrieve and set working directory</h2></hgroup><article  id="retrieve-and-set-working-directory">
 
 <ul>
 <li>Files will be saved to and retrieved from the working directory if no path is specified.</li>
@@ -319,7 +319,7 @@ Levels: low mid high</pre></li>
 <li><code>setwd</code> sets another specific path as working directory.</li>
 </ul>
 
-</article></slide><slide class=''><hgroup><h2>Practice</h2></hgroup><article  id="practice">
+</article></slide><slide class=""><hgroup><h2>Practice</h2></hgroup><article  id="practice">
 
 <p>Let’s create a folder and set it as the working directory for this tutorial! Download the following two files and put them in that directory.<br><em>Please avoid Chinese characters and spaces in your path.</em></p>
 
@@ -328,11 +328,11 @@ Levels: low mid high</pre></li>
 <li><a href='https://github.com/corytu/RLanguagePresentations/blob/master/docs/r-tutorial-practice.csv' title=''>r-tutorial-practice.csv</a></li>
 </ul>
 
-</article></slide><slide class='segue dark nobackground level1'><hgroup class = 'auto-fadein'><h2>Data Preprocessing</h2></hgroup><article  id="data-preprocessing">
+</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Data Preprocessing</h2></hgroup><article  id="data-preprocessing">
 
 <p><code>read.table</code>/<code>write.table</code>;<br><code>load</code>/<code>save.image</code>;<br><code>source</code>/<code>dump</code></p>
 
-</article></slide><slide class=''><hgroup><h2>Reading tables</h2></hgroup><article  id="reading-tables">
+</article></slide><slide class=""><hgroup><h2>Reading tables</h2></hgroup><article  id="reading-tables">
 
 <ul>
 <li><code>read.table</code> or <code>read.csv</code> inputs a table into R as a data frame.</li>
@@ -348,7 +348,7 @@ Levels: low mid high</pre></li>
 <li><code>write.table</code> or <code>write.csv</code> outputs data in a spreadsheet.</li>
 </ul>
 
-</article></slide><slide class=''><hgroup><h2>Reading a saved workspace</h2></hgroup><article  id="reading-a-saved-workspace">
+</article></slide><slide class=""><hgroup><h2>Reading a saved workspace</h2></hgroup><article  id="reading-a-saved-workspace">
 
 <ul>
 <li><code>load</code> inputs previously saved workspace into R.</li>
@@ -361,14 +361,14 @@ q()                           # Quit the R session
 load(&quot;tutorial.RData&quot;)</pre></li>
 </ul>
 
-</article></slide><slide class=''><hgroup><h2>Reading written codes</h2></hgroup><article  id="reading-written-codes">
+</article></slide><slide class=""><hgroup><h2>Reading written codes</h2></hgroup><article  id="reading-written-codes">
 
 <ul>
 <li><code>source</code> inputs a written .R file into R.</li>
 <li><code>dump</code> can be used to save .R files.</li>
 </ul>
 
-</article></slide><slide class=''><hgroup><h2>Looking at the data - 1</h2></hgroup><article  id="looking-at-the-data---1">
+</article></slide><slide class=""><hgroup><h2>Looking at the data - 1</h2></hgroup><article  id="looking-at-the-data---1">
 
 <pre class = 'prettyprint lang-r'>demo.table</pre>
 
@@ -384,7 +384,7 @@ load(&quot;tutorial.RData&quot;)</pre></li>
 9    old female  159.7
 10   old female  160.3</pre>
 
-</article></slide><slide class=''><hgroup><h2>Looking at the data - 2</h2></hgroup><article  id="looking-at-the-data---2">
+</article></slide><slide class=""><hgroup><h2>Looking at the data - 2</h2></hgroup><article  id="looking-at-the-data---2">
 
 <pre class = 'prettyprint lang-r'>head(demo.table)</pre>
 
@@ -398,7 +398,7 @@ load(&quot;tutorial.RData&quot;)</pre></li>
 
 <pre class = 'prettyprint lang-r'># Try tail(demo.table) by yourself</pre>
 
-</article></slide><slide class=''><hgroup><h2>Looking at the data - 3</h2></hgroup><article  id="looking-at-the-data---3">
+</article></slide><slide class=""><hgroup><h2>Looking at the data - 3</h2></hgroup><article  id="looking-at-the-data---3">
 
 <pre class = 'prettyprint lang-r'>summary(demo.table)</pre>
 
@@ -410,7 +410,7 @@ load(&quot;tutorial.RData&quot;)</pre></li>
                       3rd Qu.:165.5  
                       Max.   :173.1  </pre>
 
-</article></slide><slide class=''><hgroup><h2>Looking at the data - 4</h2></hgroup><article  id="looking-at-the-data---4">
+</article></slide><slide class=""><hgroup><h2>Looking at the data - 4</h2></hgroup><article  id="looking-at-the-data---4">
 
 <pre class = 'prettyprint lang-r'>str(demo.table)</pre>
 
@@ -419,7 +419,7 @@ load(&quot;tutorial.RData&quot;)</pre></li>
  $ sex   : Factor w/ 2 levels &quot;female&quot;,&quot;male&quot;: 1 2 2 2 1 1 2 2 1 1
  $ height: num  173 168 159 148 166 ...</pre>
 
-</article></slide><slide class=''><hgroup><h2>Practice</h2></hgroup><article  id="practice-3">
+</article></slide><slide class=""><hgroup><h2>Practice</h2></hgroup><article  id="practice-3">
 
 <p>Take a look at the data frame you created earlier.</p>
 
@@ -429,9 +429,9 @@ load(&quot;tutorial.RData&quot;)</pre></li>
  $ RT      : num  12 50 15
  $ MMSEpass: logi  TRUE FALSE TRUE</pre>
 
-</article></slide><slide class='segue dark nobackground level1'><hgroup class = 'auto-fadein'><h2>Extracting Subsets</h2></hgroup><article  id="extracting-subsets">
+</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Extracting Subsets</h2></hgroup><article  id="extracting-subsets">
 
-</article></slide><slide class=''><hgroup><h2>Subsetting operators - 1</h2></hgroup><article  id="subsetting-operators---1">
+</article></slide><slide class=""><hgroup><h2>Subsetting operators - 1</h2></hgroup><article  id="subsetting-operators---1">
 
 <ul>
 <li><code>[]</code> extracts elements by names, indexes, or logical values.
@@ -449,7 +449,7 @@ load(&quot;tutorial.RData&quot;)</pre></li>
 <li><code>$</code> extracts elements by name.</li>
 </ul>
 
-</article></slide><slide class=''><hgroup><h2>Subsetting operators - 2</h2></hgroup><article  id="subsetting-operators---2">
+</article></slide><slide class=""><hgroup><h2>Subsetting operators - 2</h2></hgroup><article  id="subsetting-operators---2">
 
 <ul>
 <li><p>By default, subsetting a single row or a single column from a matrix will return a vector, unless the argument &quot;drop&quot; is FALSE.</p>
@@ -461,9 +461,9 @@ load(&quot;tutorial.RData&quot;)</pre></li>
 <pre class = 'prettyprint lang-r'># What if I only need the 2nd, 4th, and 5th elements of the heights?</pre></li>
 </ul>
 
-</article></slide><slide class='segue dark nobackground level1'><hgroup class = 'auto-fadein'><h2>Vectorized Operations</h2></hgroup><article  id="vectorized-operations">
+</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Vectorized Operations</h2></hgroup><article  id="vectorized-operations">
 
-</article></slide><slide class=''><hgroup><h2>Vectorized operations in R</h2></hgroup><article  id="vectorized-operations-in-r">
+</article></slide><slide class=""><hgroup><h2>Vectorized operations in R</h2></hgroup><article  id="vectorized-operations-in-r">
 
 <pre class = 'prettyprint lang-r'>x &lt;- 1:3
 y &lt;- 4:6
@@ -478,7 +478,7 @@ n &lt;- matrix(1:4, 2, 2)
 # m * n = ?
 # m %*% n = ?</pre>
 
-</article></slide><slide class=''><hgroup><h2>Practice</h2></hgroup><article  id="practice-4">
+</article></slide><slide class=""><hgroup><h2>Practice</h2></hgroup><article  id="practice-4">
 
 <ol>
 <li>Read the .csv file, &quot;r-tutorial-practice.csv&quot;, into your R session.</li>
@@ -490,11 +490,11 @@ n &lt;- matrix(1:4, 2, 2)
 <li>Export the revised data frame as a new csv file called &quot;my-success.csv&quot; to your working directory.</li>
 </ol>
 
-</article></slide><slide class='segue dark nobackground level1'><hgroup class = 'auto-fadein'><h2>Control Structures</h2></hgroup><article  id="control-structures">
+</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Control Structures</h2></hgroup><article  id="control-structures">
 
 <p><code>if</code>, <code>for</code>, <code>while</code>. These loops can be nested.</p>
 
-</article></slide><slide class=''><hgroup><h2>Relational and logical operators</h2></hgroup><article  id="relational-and-logical-operators">
+</article></slide><slide class=""><hgroup><h2>Relational and logical operators</h2></hgroup><article  id="relational-and-logical-operators">
 
 <ul>
 <li><code>==</code> (equal to)</li>
@@ -512,7 +512,7 @@ n &lt;- matrix(1:4, 2, 2)
 <pre >[1]  TRUE FALSE  TRUE</pre></li>
 </ul>
 
-</article></slide><slide class=''><hgroup><h2>if</h2></hgroup><article  id="if">
+</article></slide><slide class=""><hgroup><h2>if</h2></hgroup><article  id="if">
 
 <pre class = 'prettyprint lang-r'>if (&lt;condition 1&gt;) {
   # do something
@@ -525,7 +525,7 @@ else {
   # do something else
 }</pre>
 
-</article></slide><slide class=''><hgroup><h2>for</h2></hgroup><article  id="for">
+</article></slide><slide class=""><hgroup><h2>for</h2></hgroup><article  id="for">
 
 <ul>
 <li><p>A <code>for</code> loop takes an iteration variable, and assigns it successive values from a sequence or a vector.</p>
@@ -547,7 +547,7 @@ for (i in 1:5) {
 [1] &quot;Fail&quot;</pre></li>
 </ul>
 
-</article></slide><slide class=''><hgroup><h2>while</h2></hgroup><article  id="while">
+</article></slide><slide class=""><hgroup><h2>while</h2></hgroup><article  id="while">
 
 <ul>
 <li><code>while</code> loops begin with testing a condition. If it is true, then execute the body. After the execution, the condition will be tested again.</li>
@@ -564,7 +564,7 @@ while (i &lt; 4) {
 [1] 4</pre></li>
 </ul>
 
-</article></slide><slide class=''><hgroup><h2>Practice</h2></hgroup><article  id="practice-5">
+</article></slide><slide class=""><hgroup><h2>Practice</h2></hgroup><article  id="practice-5">
 
 <ol>
 <li>Write a loop to revise the unreasonable waist (&gt; 35 inches) in your practiced data frame from centimeters to inches (1 inch = 2.5 cm).</li>
@@ -572,9 +572,9 @@ while (i &lt; 4) {
 <li>Export and overwrite &quot;my-success.csv&quot;.</li>
 </ol>
 
-</article></slide><slide class='segue dark nobackground level1'><hgroup class = 'auto-fadein'><h2>Advanced: Writing Functions</h2></hgroup><article  id="advanced-writing-functions">
+</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Advanced: Writing Functions</h2></hgroup><article  id="advanced-writing-functions">
 
-</article></slide><slide class=''><hgroup><h2>The first function</h2></hgroup><article  id="the-first-function">
+</article></slide><slide class=""><hgroup><h2>The first function</h2></hgroup><article  id="the-first-function">
 
 <pre class = 'prettyprint lang-r'>add &lt;- function(x, y) {
   x + y
@@ -583,7 +583,7 @@ add(2, 3)</pre>
 
 <pre >[1] 5</pre>
 
-</article></slide><slide class=''><hgroup><h2>Practice</h2></hgroup><article  id="practice-6">
+</article></slide><slide class=""><hgroup><h2>Practice</h2></hgroup><article  id="practice-6">
 
 <p>Try to create a function, which can subset and print out elements greater than a specified number from a numeric vector.</p>
 
@@ -592,7 +592,7 @@ add(2, 3)</pre>
 }
 # For example, greaters(1:5, 3) should return 4 and 5.</pre>
 
-</article></slide><slide class='segue dark nobackground level1'><hgroup class = 'auto-fadein'><h2>Applaud Yourself!!</h2></hgroup><article  id="applaud-yourself"></article></slide>
+</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Applaud Yourself!!</h2></hgroup><article  id="applaud-yourself"></article></slide>
 
 
   <slide class="backdrop"></slide>

@@ -46,7 +46,7 @@ R as a language and a free software
 
 ## Input
 - Use `<-` as the assignment operator.
-- `=` is also eligible but I recommend `<-`. [Here](https://corytu.github.io/CourseraRMentoring/use-equal-or-arrow.html) is my reason for that.
+- `=` is also eligible but I recommend `<-`. [Here](https://corytu.github.io/CourseraRMentoring/articles/use-equal-or-arrow.html) is my reason for that.
 - `#` starts comments. Comments won’t be executed.
 
     ```{r, eval = FALSE}
@@ -135,7 +135,7 @@ list(one = letters[1:4], two = 76:80, three = c(TRUE, FALSE, TRUE))
            levels = c("low", "mid", "high"))
     ```
 
-- [Further reading](https://corytu.github.io/CourseraRMentoring/factor-levels-and-labels.html) about factor levels
+- [Further reading](https://corytu.github.io/CourseraRMentoring/articles/factor-levels-and-labels.html) about factor levels
 - Factors are very useful for analyzing categorical variables.
 - Pay extra attention when coercing factors into numbers.
 
